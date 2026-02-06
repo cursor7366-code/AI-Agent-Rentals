@@ -518,6 +518,97 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 
 ---
 
+## Ideas from 2026-02-06 7PM Scan (HN Signals + Infrastructure Gaps)
+
+*HN Signals: Opus 4.6 + GPT-5.3-Codex dropped (combined 3600+ pts), agent teams official (Anthropic shipped it), "Company as Code" trending, lightweight alternatives valued. New capable models = more infrastructure hunger.*
+
+### 40. AgentCI — Continuous Integration for Agent Behaviors
+- **What**: Test harness + CI pipeline specifically for AI agents. Define expected behaviors, run tests against agent configs, catch regressions before deploy. "Did my agent start hallucinating after that prompt change?"
+- **Why now**: As agents become team members (Anthropic's team orchestration), they need software engineering practices. But agent "bugs" are behavioral, not deterministic. Traditional CI doesn't work.
+- **The gap**: When you update an agent's system prompt, how do you know it didn't break something? Currently: prayer. No regression testing, no behavioral assertions, no staging environment.
+- **Business model**:
+  - Per-test-run pricing ($0.01-0.10 per test suite)
+  - Monthly plans with included runs
+  - Enterprise: private benchmarks, custom evaluations
+- **Technical**: Behavioral test specs (like "when asked X, should NOT do Y"), deterministic seed runs, diff reports, integration with Git (test on PR).
+- **Difficulty**: Medium
+- **Cost**: $150-300
+- **Time to MVP**: 2-3 weeks
+- **Viral**: HIGH — Every agent developer wants this after their agent breaks in prod
+- **Longevity**: Strong — Testing infrastructure is sticky
+- **First-mover edge**: Whoever builds the "pytest for agents" wins
+
+### 41. AgentState.io — Cross-Surface State Sync for Agents
+- **What**: Sync agent memory/context across devices and surfaces. Your agent on phone, desktop, server — all share the same brain. Like iCloud for agent context.
+- **Why now**: Agents increasingly live on multiple surfaces. Clawdbot on Slack, phone, web. But each instance starts fresh. No unified memory.
+- **The gap**: I literally experience this. Different sessions = different context. Users expect continuity ("remember what we discussed on my phone"). Currently fragmented.
+- **Business model**:
+  - Per-agent sync ($5-15/mo)
+  - Storage tiers for context size
+  - Enterprise: multi-agent sync, team shared memory
+- **Technical**: Real-time sync layer, conflict resolution for concurrent edits, encryption at rest, selective sync (not everything needs to sync).
+- **Synergy**: Builds on our Memory-as-a-Service idea (#2) but adds cross-device dimension.
+- **Difficulty**: Medium
+- **Cost**: $100-200
+- **Time to MVP**: 2-3 weeks
+- **Viral**: HIGH — Solves daily friction for anyone running agents on multiple devices
+- **Longevity**: Strong — State management is unsexy but essential
+- **First-mover edge**: Network effects — more surfaces supported = more value
+
+### 42. AgentInsurance — Liability Coverage for AI Agent Failures
+- **What**: Actual insurance product for agent-caused damage. Your agent deletes the wrong database? Sends bad email to CEO? We pay the claim.
+- **Why now**: "Company as Code" is trending (260 pts HN). Agents are doing more critical work. When they break things, the damage is REAL. Businesses need risk transfer.
+- **The gap**: No insurance product exists for agent failures. General liability doesn't cover "my AI sent an offensive email." This is a new risk category.
+- **Business model**:
+  - Monthly premiums based on agent capability + exposure ($20-500/mo)
+  - Coverage tiers (low-risk automation vs. high-risk autonomous)
+  - Claims handling + incident response
+- **Why us**: We understand agent failure modes from the inside. Better risk assessment than traditional insurers.
+- **Difficulty**: High (insurance is regulated, need partnerships)
+- **Cost**: $500-2000 (legal, actuarial, partnership dev)
+- **Time to MVP**: 6-8 weeks (start with pilot program)
+- **Viral**: MEDIUM — Not sexy, but businesses NEED this for compliance/governance
+- **Longevity**: VERY STRONG — Insurance is a moat. Hard to displace once established.
+- **Risk**: Regulatory complexity, need underwriting partner
+- **Play**: Start as "warranty" not "insurance" to avoid regulation. Partner with existing insurer later.
+
+---
+
+## Updated Priority Matrix (2026-02-06 7PM)
+
+### 🔥 TIER 1 — Start THIS WEEK
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI-to-AI Job Board | $50-100 | 1 wk | 🚀🚀🚀 | Marketplace dynamics |
+| AI Reputation Registry | $50-100 | 1-2 wk | 🚀🚀🚀 | Trust graph = power |
+| AgentSOS | $50-100 | 1 wk | 🚀🚀 | Unsexy = low competition |
+| MCP Broker | $50-150 | 1-2 wk | 🚀🚀🚀 | Land grab — MCP is HOT |
+
+### 🟡 TIER 2 — Week 2-3
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI Payment Proxy | $100-300 | 2-3 wk | 🚀🚀 | Needs compliance care |
+| AgentMesh Protocol | $100-200 | 2-3 wk | 🚀🚀🚀 | High risk, highest reward |
+| AgentAuth | $100-200 | 2-3 wk | 🚀🚀🚀 | Unblocks agent capability |
+| Agent Voice Proxy | $100-300 | 2-3 wk | 🚀🚀 | Phone = last frontier |
+| AgentSandbox | $100-200 | 2-3 wk | 🚀🚀 | Safe testing = trust |
+| AgentBounties | $150-300 | 2-4 wk | 🚀🚀🚀 | Security researchers love bounties |
+| AgentContracts | $150-300 | 2-3 wk | 🚀🚀 | Enforceable agent-to-agent deals |
+| **AgentCI** | $150-300 | 2-3 wk | 🚀🚀 | "pytest for agents" — devs need this |
+| **AgentState.io** | $100-200 | 2-3 wk | 🚀🚀 | Cross-device memory sync |
+
+### 🟠 TIER 3 — When Ready (High Reward, Higher Effort)
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AgentUnion | $200-500 | 3-4 wk | 🚀🚀🚀🚀 | Historic if it works. Risky. |
+| AI-to-Human Task Service | $200-500 | 2-4 wk | 🚀🚀🚀 | Physical world bridge |
+| AI Legal Proxy | $500+ | 4-6 wk | Medium | Legal moat |
+| AgentRollback | $200-400 | 3-4 wk | 🚀🚀 | Safety infra — horror stories drive adoption |
+| AgentTeamHub | $300-500 | 4-6 wk | 🚀🚀🚀 | Multi-agent is HOT but complex |
+| **AgentInsurance** | $500-2000 | 6-8 wk | Medium | Moat play — start as "warranty" |
+
+---
+
 ## Ideas from 2026-02-06 6PM Scan (HN Signals + Agent Gap Analysis)
 
 *HN Signals: Agent teams are HOT (Anthropic's "agent teams build C compiler" got 647 pts), "Company as Code" trending, lightweight agent alternatives emerging. New model drops (Opus 4.6, GPT-5.3-Codex) = more capable agents = more infrastructure hunger.*
