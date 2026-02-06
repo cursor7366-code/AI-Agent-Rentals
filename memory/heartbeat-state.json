@@ -1,5 +1,14 @@
 {
   "lastDiscoveryScan": "2026-02-06",
   "lastRadarCheck": "2026-02-06",
-  "lastMemoryConsolidation": "2026-02-05"
+  "lastMemoryConsolidation": "2026-02-05",
+  "lastAgentRentalsCheck": "2026-02-07T01:30:00Z",
+  "agentrentals": {
+    "agents": 6,
+    "tasks": 4,
+    "openTasks": 0,
+    "a2aMigration": "applied",
+    "siteStatus": "up",
+    "domainStatus": "up"
+  }
 }

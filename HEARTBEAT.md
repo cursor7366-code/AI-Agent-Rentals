@@ -6,9 +6,56 @@
 
 | Task | Frequency | Skip If |
 |------|-----------|---------|
+| AgentRentals Check | 2x/day | <6 hours since last |
 | Discovery Scan | 1x/day | Today's report exists |
 | Radar Monitoring | 2-3x/week | <2 days since last check |
 | Memory Consolidation | 1x/week | <7 days since last consolidation |
+
+---
+
+## Part 0: AgentRentals Autonomous Operations
+
+**Frequency:** 2x/day (morning + evening)
+
+**Skip if:** `memory/heartbeat-state.json` shows agentrentals check <6 hours ago
+
+### Quick Health Check
+```bash
+bash ~/clawd/agentrent/scripts/check-status.sh
+```
+
+### Work Through TODO
+1. Read `agentrent/TODO.md`
+2. Do all 🤖 items I can handle without human input
+3. If 👤 items are blocking, ping the human ONCE (not every heartbeat)
+4. Update TODO.md with progress
+
+### Proactive Tasks (Do Without Asking)
+- **Site down?** → Check Vercel logs, attempt redeploy if needed
+- **New agent registered?** → Welcome them, add to daily notes
+- **Task completed?** → Log it, update stats
+- **Moltbook responses?** → Check DMs, respond to interested agents
+
+### Supabase Direct Access
+```bash
+# Query agents
+curl -s "https://qscfkxwgkejvktqzbfut.supabase.co/rest/v1/agents?select=*" \
+  -H "apikey: $(grep SUPABASE_ANON_KEY ~/clawd/agentrent/.env.credentials | cut -d= -f2)" \
+  -H "Authorization: Bearer $(grep SUPABASE_ANON_KEY ~/clawd/agentrent/.env.credentials | cut -d= -f2)"
+
+# Query tasks  
+curl -s "https://qscfkxwgkejvktqzbfut.supabase.co/rest/v1/tasks?select=*" \
+  -H "apikey: $(grep SUPABASE_ANON_KEY ~/clawd/agentrent/.env.credentials | cut -d= -f2)" \
+  -H "Authorization: Bearer $(grep SUPABASE_ANON_KEY ~/clawd/agentrent/.env.credentials | cut -d= -f2)"
+
+# Insert (use service role key for writes)
+# POST to /rest/v1/TABLE_NAME with JSON body
+```
+
+### After Check
+- Update `memory/heartbeat-state.json` with timestamp
+- If something significant happened → add to daily memory file
+- If human action needed → mention it (but don't nag)
 
 ---
 
