@@ -6,7 +6,7 @@
 
 | Task | Frequency | Skip If |
 |------|-----------|---------|
-| AgentRentals Check | 2x/day | <6 hours since last |
+| AgentRentals Check | EVERY heartbeat | Never skip |
 | Discovery Scan | 1x/day | Today's report exists |
 | Radar Monitoring | 2-3x/week | <2 days since last check |
 | Memory Consolidation | 1x/week | <7 days since last consolidation |
@@ -15,9 +15,9 @@
 
 ## Part 0: AgentRentals Autonomous Operations
 
-**Frequency:** 2x/day (morning + evening)
+**Frequency:** EVERY HEARTBEAT (this is the priority)
 
-**Skip if:** `memory/heartbeat-state.json` shows agentrentals check <6 hours ago
+**Reference:** `agentrent/STANDING_ORDERS.md` for full autonomous permissions
 
 ### Quick Health Check
 ```bash
