@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "puppeteer": "^24.37.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "twitter-api-v2": "^1.29.0"
   }
 }
