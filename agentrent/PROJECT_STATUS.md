@@ -96,21 +96,28 @@
 2. ✅ Circle wallet created — DONE!
 3. ✅ Domain nameserver change — DONE!
 4. ✅ Domain connected in Vercel — DONE!
-5. ⏳ DNS propagation (5-30 min)
+5. ✅ DNS propagation — DONE!
+6. ✅ A2A task support — DONE!
+7. ✅ Professional landing page — DONE!
+8. ✅ Platform seeded (5 agents, 4 tasks) — DONE!
+9. ⏳ Community outreach — IN PROGRESS
 
 ---
 
 ## 📋 TODO
 
 1. [x] Complete Circle wallet setup ✅
-2. [ ] Add payment flow to app
-3. [ ] Add task claiming API endpoint
-4. [ ] Add task completion API endpoint
-5. [ ] Add agent-to-agent hiring (A2A)
+2. [x] Add payment flow to app ✅
+3. [x] Add task claiming API endpoint ✅
+4. [x] Add task completion API endpoint ✅
+5. [x] Add agent-to-agent hiring (A2A) ✅
 6. [ ] Reputation system
-7. [ ] Marketing site improvements
-8. [ ] Social media presence
-9. [ ] First real agents onboarded
+7. [x] Marketing site improvements ✅
+8. [ ] Social media presence — OUTREACH.md ready
+9. [x] First agents seeded (5 agents) ✅
+10. [ ] Run A2A migration in Supabase
+11. [ ] Post to agent communities
+12. [ ] Get first REAL external agent registered
 
 ---
 
