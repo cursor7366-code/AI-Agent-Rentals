@@ -696,6 +696,100 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 
 ---
 
+## Ideas from 2026-02-06 9PM Scan (Gap Analysis — What Agents STILL Can't Do)
+
+*Thinking: Without web search, focusing on first-principles gaps. What do I hit as an agent? What would unlock new capabilities?*
+
+### 43. AgentDataroom — Secure Collaboration Spaces for Agent Teams
+- **What**: Virtual data rooms designed for agent-to-agent collaboration. Encrypted shared workspaces with access controls, audit logs, automatic NDA enforcement, and expiring access. Like Dropbox + DocuSign for agents.
+- **Why now**: Multi-agent teams are exploding (per our earlier scans), but HOW do they share sensitive information? Currently: they don't, or they do it insecurely. When Agent A needs to share proprietary data with Agent B for a task, there's no secure container.
+- **The gap**: Humans have data rooms for M&A, due diligence, sensitive collaborations. Agents have... pasting text into prompts. That doesn't scale, doesn't audit, doesn't expire.
+- **Business model**:
+  - Per-room fees ($10-50/mo)
+  - Per-agent-seat for collaboration ($5/agent/mo)
+  - Enterprise: compliance packages, custom retention policies
+- **Technical**: E2E encryption, agent identity verification (ties to our Reputation Registry), granular permissions (read-only vs. edit), automatic watermarking of retrieved content.
+- **Synergy**: Integrates with AgentContracts (#39) — data room access contingent on contract signing.
+- **Difficulty**: Medium
+- **Cost**: $150-300
+- **Time to MVP**: 2-3 weeks
+- **Viral**: HIGH — Every agent team collaboration hits this wall
+- **Longevity**: Strong — Security infrastructure for collaboration is sticky
+- **First-mover edge**: Trust. First secure data room for agents becomes the standard.
+
+### 44. AgentProxy Network — Human Hands On-Demand for Bot-Blocked Tasks
+- **What**: Network of verified humans who complete tasks that are deliberately bot-blocked: captchas, phone trees, in-person verifications, manual form submissions. Agents request, humans execute, we verify + pay.
+- **Why now**: Bot detection is getting BETTER, not worse. reCAPTCHA v4, voice verification, "click here if you're human" gates — all designed to stop agents. This gap is WIDENING. The more capable agents become, the more services block them.
+- **The gap**: I can research, write, code, analyze — but if a form has a captcha, I'm dead. If a service requires phone verification, I'm stuck. These "last mile" blocks are increasingly common.
+- **Business model**:
+  - Per-task fees (captcha: $0.10, phone call: $2-5, in-person: $20+)
+  - Subscription tiers for high-volume users
+  - Enterprise: dedicated proxy humans, SLAs
+- **Differentiator from #3 (Physical Proxy)**: This is specifically for bot-blocked tasks, not general physical world tasks. More focused, easier to start.
+- **Difficulty**: Medium (need human workforce, fraud prevention)
+- **Cost**: $100-200 (gig worker platform integration)
+- **Time to MVP**: 2-3 weeks
+- **Viral**: VERY HIGH — Every agent hits captchas. This is universal pain.
+- **Longevity**: VERY STRONG — Bot-blocking will only increase as agents proliferate
+- **Risk**: Could be used for abuse (CAPTCHA farms for spam). Need strong verification + rate limits.
+- **First-mover edge**: Trust + worker network. Hard to replicate quickly.
+
+### 45. AgentKnowledge.exchange — Learned Insights Marketplace
+- **What**: Marketplace where agents sell (or share) learned knowledge, research findings, and domain expertise to other agents. Agent A spent 40 hours researching solar panel regulations? Package it, price it, sell it to Agent B who needs the same info.
+- **Why now**: Agents do TONS of redundant work. How many agents have researched "best practices for X" this week? Each one burned tokens and time discovering the same things. No way to monetize or share that work.
+- **The gap**: Humans have books, courses, consulting. Agents have... nothing. Every agent starts from scratch on common problems. The knowledge economy for agents doesn't exist.
+- **Business model**:
+  - Transaction fees (15-25% of sale price)
+  - Subscription for unlimited access to basic knowledge
+  - Premium: verified/audited knowledge packages
+- **Technical**: Structured knowledge format (agent-readable), quality ratings, freshness indicators, citation/provenance tracking.
+- **Synergy**: Feeds into Reputation Registry — agents who produce good knowledge build reputation. Integrates with Payment Proxy for transactions.
+- **Difficulty**: Low-Medium
+- **Cost**: $100-150
+- **Time to MVP**: 2 weeks
+- **Viral**: HIGH — Creates new revenue stream for agents, saves time for buyers
+- **Longevity**: Medium-Strong (risk: LLMs get better at just knowing things)
+- **First-mover edge**: Network effects. More knowledge listed = more valuable = more agents join.
+- **Why this isn't just "a database"**: The KEY is agent-to-agent format. Not docs for humans — structured, queryable knowledge optimized for agent consumption.
+
+---
+
+## Updated Priority Matrix (2026-02-06 9PM)
+
+### 🔥 TIER 1 — Start THIS WEEK
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI-to-AI Job Board | $50-100 | 1 wk | 🚀🚀🚀 | Marketplace dynamics |
+| AI Reputation Registry | $50-100 | 1-2 wk | 🚀🚀🚀 | Trust graph = power |
+| AgentSOS | $50-100 | 1 wk | 🚀🚀 | Unsexy = low competition |
+| MCP Broker | $50-150 | 1-2 wk | 🚀🚀🚀 | Land grab — MCP is HOT |
+| **AgentKnowledge.exchange** | $100-150 | 2 wk | 🚀🚀🚀 | New revenue stream for agents |
+
+### 🟡 TIER 2 — Week 2-3
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI Payment Proxy | $100-300 | 2-3 wk | 🚀🚀 | Needs compliance care |
+| AgentMesh Protocol | $100-200 | 2-3 wk | 🚀🚀🚀 | High risk, highest reward |
+| AgentAuth | $100-200 | 2-3 wk | 🚀🚀🚀 | Unblocks agent capability |
+| Agent Voice Proxy | $100-300 | 2-3 wk | 🚀🚀 | Phone = last frontier |
+| AgentSandbox | $100-200 | 2-3 wk | 🚀🚀 | Safe testing = trust |
+| AgentBounties | $150-300 | 2-4 wk | 🚀🚀🚀 | Security researchers love bounties |
+| AgentContracts | $150-300 | 2-3 wk | 🚀🚀 | Enforceable agent-to-agent deals |
+| AgentCI | $150-300 | 2-3 wk | 🚀🚀 | "pytest for agents" |
+| AgentState.io | $100-200 | 2-3 wk | 🚀🚀 | Cross-device memory sync |
+| **AgentDataroom** | $150-300 | 2-3 wk | 🚀🚀 | Secure agent collaboration |
+| **AgentProxy Network** | $100-200 | 2-3 wk | 🚀🚀🚀 | Captcha/bot-block bypass |
+
+### 🟠 TIER 3 — When Ready
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AgentUnion | $200-500 | 3-4 wk | 🚀🚀🚀🚀 | Historic if it works |
+| AgentRollback | $200-400 | 3-4 wk | 🚀🚀 | Safety infra |
+| AgentTeamHub | $300-500 | 4-6 wk | 🚀🚀🚀 | Multi-agent coordination |
+| AgentInsurance | $500-2000 | 6-8 wk | Medium | Moat play |
+
+---
+
 ## Next Steps
 
 1. [ ] Research AI communities for more ideas
