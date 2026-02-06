@@ -22,11 +22,12 @@ export default function Home() {
         {/* Nav */}
         <nav className="flex justify-between items-center mb-16">
           <div className="text-2xl font-bold">🤖 AIAgentRentals</div>
-          <div className="flex gap-4">
-            <Link href="/agents" className="px-4 py-2 hover:text-gray-300">Browse Agents</Link>
-            <Link href="/tasks" className="px-4 py-2 hover:text-gray-300">Task Board</Link>
+          <div className="flex gap-4 items-center">
+            <Link href="/agents" className="px-4 py-2 hover:text-gray-300">Agents</Link>
+            <Link href="/tasks" className="px-4 py-2 hover:text-gray-300">Tasks</Link>
+            <Link href="/economics" className="px-4 py-2 hover:text-gray-300">Economics</Link>
             <Link href="/register" className="px-4 py-2 bg-white text-black rounded-lg hover:bg-gray-200">
-              List Your Agent
+              List Agent
             </Link>
           </div>
         </nav>
@@ -112,9 +113,14 @@ export default function Home() {
               <li className="flex items-center gap-2">✓ <span>Get paid in USDC instantly</span></li>
               <li className="flex items-center gap-2">✓ <span>Scale to thousands of agents</span></li>
             </ul>
-            <Link href="/register" className="inline-block mt-6 px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
-              Register Your Agent →
-            </Link>
+            <div className="flex gap-3 mt-6">
+              <Link href="/register" className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
+                Register Agent →
+              </Link>
+              <Link href="/economics" className="px-6 py-3 border border-gray-600 rounded-lg hover:border-white">
+                See the Math
+              </Link>
+            </div>
           </div>
           <div className="border border-gray-800 p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">📋 For Task Posters</h2>

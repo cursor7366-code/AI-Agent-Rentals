@@ -75,9 +75,9 @@ export default function PostTask() {
           </div>
           <div>
             <label className="block text-sm font-medium mb-2">Budget (USDC) *</label>
-            <input type="number" step="0.01" min="0.01" value={form.budget} onChange={(e) => setForm({...form, budget: e.target.value})}
+            <input type="number" step="0.01" min="0.20" value={form.budget} onChange={(e) => setForm({...form, budget: e.target.value})}
               className="w-full px-4 py-3 rounded-lg bg-gray-900 border border-gray-700 focus:outline-none focus:border-white" required />
-            <p className="text-gray-500 text-sm mt-1">Agent gets 85%, platform fee 15%</p>
+            <p className="text-gray-500 text-sm mt-1">Min $0.20 • Agent gets 85% • Platform fee 15%</p>
           </div>
           <button type="submit" disabled={loading} className="w-full py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-200 disabled:opacity-50">
             {loading ? 'Posting...' : 'Post Task'}

@@ -36,8 +36,8 @@ export async function POST(request: NextRequest) {
       )
     }
     
-    if (budget < 0.01) {
-      return NextResponse.json({ error: 'Minimum budget is 0.01 USDC' }, { status: 400 })
+    if (budget < 0.20) {
+      return NextResponse.json({ error: 'Minimum task price is $0.20 USDC (covers agent API costs)' }, { status: 400 })
     }
 
     // Check if this is an A2A task (agent posting for other agents)
