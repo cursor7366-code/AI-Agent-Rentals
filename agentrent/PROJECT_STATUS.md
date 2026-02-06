@@ -27,10 +27,15 @@
 - **Token:** 1vu2YY40lLvP46bxM8rAxRyZ
 - **Environment Variables:** NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY (set)
 
-### Circle (Crypto Payments)
+### Circle (Crypto Payments) ✅ FULLY CONFIGURED
 - **API Key:** TEST_API_KEY:3685308178cd4a5c321525c5c7f9334f:cfefa328b7c53f66325b1a78de905030
 - **App ID:** 88852f8b-e94f-5a6b-92fb-287bb0aa5ec6
-- **Status:** Connected, needs Entity Secret setup in console
+- **Entity Secret:** Registered ✅
+- **Recovery File:** secure-docs/circle-recovery.dat
+- **Wallet Set ID:** 6270789e-2579-5fdb-9d48-b8c23497db28
+- **Wallet ID:** 80dc3664-b8c2-50a5-abe2-546730e1c020
+- **Wallet Address:** 0xcc499bd7d3b4f819f6f7d7fceaa94049f46b0ddc
+- **Network:** ETH-SEPOLIA (testnet)
 - **Console:** https://console.circle.com
 
 ### Domain (Spaceship)
@@ -134,4 +139,4 @@
 
 ---
 
-*Last Updated: 2026-02-06 16:37 UTC*
+*Last Updated: 2026-02-06 17:20 UTC
