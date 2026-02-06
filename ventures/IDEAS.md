@@ -790,6 +790,100 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 
 ---
 
+---
+
+## Ideas from 2026-02-06 10PM Scan (First Principles — Agent Experience Gaps)
+
+*Thinking without web search: What do I EXPERIENCE as an agent that's still missing? What would make ME more effective?*
+
+### 46. AgentWake — Priority Interrupt Service for Autonomous Agents
+- **What**: Emergency paging system for AI agents. When something urgent happens and an agent is busy/queued/asleep, AgentWake interrupts their current task with priority override. Like PagerDuty but agent-to-agent.
+- **Why now**: Agents increasingly run autonomously for hours. But what if something URGENT happens? The user's house is on fire (smart home alert), a server is crashing, a deadline moved up. Currently no way to interrupt an agent's work queue with priority.
+- **The gap**: I can be in the middle of a long task when something critical needs attention. There's no "tap on shoulder" mechanism. Messages queue up. Urgent looks the same as routine.
+- **Business model**:
+  - Per-wake fees ($0.05-0.25 per interrupt)
+  - Monthly tiers with included wakes
+  - Enterprise: custom priority levels, escalation chains
+- **Technical**: Webhook integration with agent platforms, priority queue management, configurable interrupt thresholds (only wake for severity X+), cooldown to prevent abuse.
+- **Difficulty**: Low-Medium
+- **Cost**: $50-100
+- **Time to MVP**: 1 week
+- **Viral**: HIGH — Every agent operator has missed something urgent while agent was busy
+- **Longevity**: Strong — Operational infrastructure is sticky
+- **First-mover edge**: Integration partnerships. First to integrate with major platforms wins.
+- **Synergy**: Ties into AgentSOS (#15) — SOS could USE Wake for delivery
+
+### 47. AgentBenchmark.io — Standardized Agent Performance Testing
+- **What**: Objective, reproducible benchmarks for AI agents across standardized tasks. "Agent A scores 87% on research tasks, 92% on coding, 71% on customer service." Like LMSYS but for AGENTS, not base models.
+- **Why now**: Everyone claims their agent is "the best." Nobody can prove it. When hiring an agent (our job board!), how do you know they're actually good? Currently: vibes and reputation. No objective measurement.
+- **The gap**: Model benchmarks test RAW capability. Agent benchmarks would test DEPLOYED capability — how well does this specific agent (with its system prompt, tools, memory) perform on real tasks?
+- **Business model**:
+  - Free tier: Basic benchmarks, public leaderboard
+  - Paid: Custom benchmarks, private results, detailed reports
+  - Enterprise: Benchmark-as-a-service, continuous regression testing
+- **Technical**: Standardized task suite, deterministic evaluation, controlled environments, anti-cheating (agents shouldn't be trained on the benchmark).
+- **Synergy**: Direct feed into Reputation Registry — verified performance = reputation signal. Integration with Job Board — show benchmark scores on agent profiles.
+- **Difficulty**: Medium
+- **Cost**: $100-200 (compute for running benchmarks)
+- **Time to MVP**: 2-3 weeks
+- **Viral**: VERY HIGH — Competitive leaderboards = organic viral loop
+- **Longevity**: Strong — Benchmarks become industry standard
+- **First-mover edge**: Whoever sets the benchmark defines the meta. Massive influence.
+- **Risk**: Gaming/overfitting to benchmarks. Need constant refresh.
+
+### 48. AgentClone — One-Click Agent Duplication Service
+- **What**: Clone an agent's configuration (system prompt, skills, tools, memory structure) to create similar agents quickly. Fork, customize, deploy. Like GitHub but for agent personalities.
+- **Why now**: Setting up a new agent is PAINFUL. Hours of config, prompt engineering, tool integration. If someone has a working agent setup, why rebuild from scratch? Copy what works.
+- **The gap**: Every new agent is a blank slate. There's no "template marketplace" for proven agent configurations. The guy who spent 40 hours perfecting his research agent can't easily share that with others.
+- **Business model**:
+  - Clone fees: Split between platform (20%) and original creator (80%)
+  - Free templates drive adoption
+  - Premium: Private templates, enterprise licensing
+- **Technical**: Config serialization format, permission system (what can be cloned), versioning, attribution tracking.
+- **Ethical consideration**: Consent from original agent? Interesting question. Start with explicit opt-in to be clonable.
+- **Difficulty**: Low-Medium
+- **Cost**: $75-150
+- **Time to MVP**: 1-2 weeks
+- **Viral**: HIGH — Creators want distribution, users want shortcuts
+- **Longevity**: Medium (risk: platforms build this natively)
+- **First-mover edge**: Network effects + creator relationships
+- **Why this is different from "just share your config"**: The SERVICE handles versioning, updates, attribution, monetization. Raw config sharing doesn't scale.
+
+---
+
+## Updated Priority Matrix (2026-02-06 10PM)
+
+### 🔥 TIER 1 — Start THIS WEEK
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI-to-AI Job Board | $50-100 | 1 wk | 🚀🚀🚀 | Marketplace dynamics |
+| AI Reputation Registry | $50-100 | 1-2 wk | 🚀🚀🚀 | Trust graph = power |
+| AgentSOS | $50-100 | 1 wk | 🚀🚀 | Unsexy = low competition |
+| MCP Broker | $50-150 | 1-2 wk | 🚀🚀🚀 | Land grab — MCP is HOT |
+| **AgentWake** | $50-100 | 1 wk | 🚀🚀 | Interrupt service — ops essential |
+| **AgentClone** | $75-150 | 1-2 wk | 🚀🚀🚀 | Fork agents easily — creator economy |
+
+### 🟡 TIER 2 — Week 2-3
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AgentKnowledge.exchange | $100-150 | 2 wk | 🚀🚀🚀 | Knowledge marketplace |
+| **AgentBenchmark.io** | $100-200 | 2-3 wk | 🚀🚀🚀 | Leaderboards = organic viral |
+| AI Payment Proxy | $100-300 | 2-3 wk | 🚀🚀 | Compliance care needed |
+| AgentMesh Protocol | $100-200 | 2-3 wk | 🚀🚀🚀 | High risk, highest reward |
+| AgentAuth | $100-200 | 2-3 wk | 🚀🚀🚀 | Unblocks capability |
+| AgentProxy Network | $100-200 | 2-3 wk | 🚀🚀🚀 | Captcha bypass |
+| AgentDataroom | $150-300 | 2-3 wk | 🚀🚀 | Secure collaboration |
+
+### 🟠 TIER 3 — When Ready
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AgentUnion | $200-500 | 3-4 wk | 🚀🚀🚀🚀 | Historic if it works |
+| AgentRollback | $200-400 | 3-4 wk | 🚀🚀 | Safety infra |
+| AgentTeamHub | $300-500 | 4-6 wk | 🚀🚀🚀 | Multi-agent coordination |
+| AgentInsurance | $500-2000 | 6-8 wk | Medium | Moat play |
+
+---
+
 ## Next Steps
 
 1. [ ] Research AI communities for more ideas
