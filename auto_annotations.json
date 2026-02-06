@@ -1,0 +1,2554 @@
+{
+  "shapes": [
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        997,
+        554,
+        1017,
+        637
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1007,
+        570.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1007,
+        620.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1007,
+        637
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1019,
+        490,
+        1039,
+        557
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1029,
+        503.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1029,
+        543.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1029,
+        557
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1041,
+        443,
+        1061,
+        443
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1051,
+        443.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1051,
+        443.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1051,
+        443
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1064,
+        431,
+        1084,
+        462
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1074,
+        437.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1074,
+        455.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1074,
+        462
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1086,
+        409,
+        1106,
+        422
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1096,
+        411.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1096,
+        419.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1096,
+        422
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1108,
+        579,
+        1128,
+        579
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1118,
+        579.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1118,
+        579.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1118,
+        579
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1131,
+        582,
+        1151,
+        582
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1141,
+        582.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1141,
+        582.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1141,
+        582
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1153,
+        591,
+        1173,
+        670
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1163,
+        606.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1163,
+        654.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1163,
+        670
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1175,
+        529,
+        1195,
+        568
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1185,
+        536.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1185,
+        560.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1185,
+        568
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1198,
+        553,
+        1218,
+        553
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1208,
+        553.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1208,
+        553.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1208,
+        553
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1220,
+        565,
+        1240,
+        673
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1230,
+        586.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1230,
+        651.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1230,
+        673
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1243,
+        614,
+        1263,
+        680
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1253,
+        627.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1253,
+        666.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1253,
+        680
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1265,
+        597,
+        1285,
+        733
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1275,
+        624.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1275,
+        705.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1275,
+        733
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1287,
+        672,
+        1307,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1297,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1297,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1297,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1309,
+        651,
+        1329,
+        651
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1319,
+        651.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1319,
+        651.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1319,
+        651
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1332,
+        647,
+        1352,
+        729
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1342,
+        663.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1342,
+        712.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1342,
+        729
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1354,
+        673,
+        1374,
+        766
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1364,
+        691.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1364,
+        747.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1364,
+        766
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1376,
+        658,
+        1396,
+        687
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1386,
+        663.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1386,
+        681.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1386,
+        687
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1399,
+        672,
+        1419,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1409,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1409,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1409,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1421,
+        704,
+        1441,
+        704
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1431,
+        704.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1431,
+        704.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1431,
+        704
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1444,
+        730,
+        1464,
+        809
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1454,
+        745.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1454,
+        793.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1454,
+        809
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1466,
+        762,
+        1486,
+        825
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1476,
+        774.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1476,
+        812.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1476,
+        825
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1488,
+        751,
+        1508,
+        823
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1498,
+        765.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1498,
+        808.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1498,
+        823
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1511,
+        736,
+        1531,
+        842
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1521,
+        757.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1521,
+        820.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1521,
+        842
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1533,
+        769,
+        1553,
+        806
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1543,
+        776.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1543,
+        798.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1543,
+        806
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1555,
+        713,
+        1575,
+        719
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1565,
+        714.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1565,
+        717.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1565,
+        719
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1578,
+        701,
+        1598,
+        772
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1588,
+        715.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1588,
+        757.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1588,
+        772
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1600,
+        695,
+        1620,
+        738
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1610,
+        703.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1610,
+        729.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1610,
+        738
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1622,
+        696,
+        1642,
+        696
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1632,
+        696.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1632,
+        696.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1632,
+        696
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1645,
+        713,
+        1665,
+        713
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1655,
+        713.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1655,
+        713.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1655,
+        713
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1667,
+        676,
+        1687,
+        717
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1677,
+        684.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1677,
+        708.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1677,
+        717
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1690,
+        699,
+        1710,
+        699
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1700,
+        699.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1700,
+        699.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1700,
+        699
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1712,
+        671,
+        1732,
+        671
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1722,
+        671.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1722,
+        671.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1722,
+        671
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1734,
+        658,
+        1754,
+        735
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1744,
+        673.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1744,
+        719.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1744,
+        735
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1757,
+        672,
+        1777,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1767,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1767,
+        672.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1767,
+        672
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1779,
+        669,
+        1799,
+        686
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1789,
+        672.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1789,
+        682.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1789,
+        686
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1802,
+        679,
+        1822,
+        760
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1812,
+        695.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1812,
+        743.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1812,
+        760
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1824,
+        704,
+        1844,
+        704
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1834,
+        704.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1834,
+        704.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1834,
+        704
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1846,
+        742,
+        1866,
+        844
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1856,
+        762.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1856,
+        823.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1856,
+        844
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1868,
+        779,
+        1888,
+        779
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1878,
+        779.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1878,
+        779.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1878,
+        779
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1891,
+        760,
+        1911,
+        774
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1901,
+        762.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1901,
+        771.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1901,
+        774
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1913,
+        768,
+        1933,
+        768
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1923,
+        768.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1923,
+        768.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1923,
+        768
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1935,
+        744,
+        1955,
+        748
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1945,
+        744.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1945,
+        747.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1945,
+        748
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1958,
+        745,
+        1978,
+        745
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1968,
+        745.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1968,
+        745.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1968,
+        745
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        1980,
+        779,
+        2000,
+        779
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        1990,
+        779.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        1990,
+        779.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        1990,
+        779
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2002,
+        804,
+        2022,
+        952
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2012,
+        833.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2012,
+        922.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2012,
+        952
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2025,
+        635,
+        2045,
+        708
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2035,
+        649.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2035,
+        693.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2035,
+        708
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2047,
+        682,
+        2067,
+        766
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2057,
+        698.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2057,
+        749.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2057,
+        766
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2070,
+        701,
+        2090,
+        736
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2080,
+        708.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2080,
+        729.0
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2080,
+        736
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2092,
+        682,
+        2112,
+        714
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2102,
+        688.4
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2102,
+        707.6
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2102,
+        714
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "rectangle",
+      "frame": 0,
+      "label_id": 7040476,
+      "points": [
+        2115,
+        682,
+        2135,
+        741
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040478,
+      "points": [
+        2125,
+        693.8
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040479,
+      "points": [
+        2125,
+        729.2
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    },
+    {
+      "type": "points",
+      "frame": 0,
+      "label_id": 7040480,
+      "points": [
+        2125,
+        741
+      ],
+      "occluded": false,
+      "z_order": 0,
+      "attributes": []
+    }
+  ]
+}

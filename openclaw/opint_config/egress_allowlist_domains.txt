@@ -1,0 +1,22 @@
+# OpenClaw Egress Allowlist - Exact hostnames only
+# Source: derived from sources.json + required LLM endpoints
+# DO NOT add wildcards without explicit Owner approval
+
+# LLM API endpoints (required for extraction)
+api.anthropic.com
+
+# Louisiana - Orleans Parish
+www.orleanscdc.com
+orleanscdc.com
+nolaassessor.com
+www.nolaassessor.com
+data.nola.gov
+
+# Louisiana - East Baton Rouge Parish
+www.ebrclerkofcourt.org
+ebrclerkofcourt.org
+www.ebrso.org
+ebrso.org
+
+# Egress test (must be BLOCKED)
+# example.com

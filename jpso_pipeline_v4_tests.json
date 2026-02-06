@@ -1,0 +1,75 @@
+{
+  "pipeline": "jpso_pipeline_v4",
+  "target_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+  "golden_test_cases": [
+    {
+      "test_id": "GT-V4-001",
+      "description": "Complete record with all fields present including address",
+      "fixture_file": "fixtures/test_row_complete.html",
+      "raw_input_html": "<tr class=\"property-row-re\" data-csshnbr=\"131932\"><td style=\"min-width: 90px;\">868-531</td><td style=\"min-width: 400px;\">U.S. BANK NATIONAL ASSOCIATION, AS INDENTURE TRUSTEE VERSUS AARON J. HURD A/K/A AARON HURD AND MICHELLE SAHUQUE HURD</td><td>3/4/2025</td><td>1210 MINOR STREET KENNER, LA</td><td>$76,426.03</td><td><img src=\"/JudpSale/Content/Images/red_cross.png\" class=\"centerImage\" /></td></tr>",
+      "expected_output": {
+        "case_id": "868-531",
+        "sale_date": "2025-03-04",
+        "address": "1210 MINOR STREET KENNER, LA",
+        "writ_amount": "76426.03",
+        "case_style": "U.S. BANK NATIONAL ASSOCIATION, AS INDENTURE TRUSTEE VERSUS AARON J. HURD A/K/A AARON HURD AND MICHELLE SAHUQUE HURD",
+        "party_plaintiff": "U.S. BANK NATIONAL ASSOCIATION, AS INDENTURE TRUSTEE",
+        "party_defendant": "AARON J. HURD A/K/A AARON HURD AND MICHELLE SAHUQUE HURD",
+        "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+        "completeness_score": 1.0
+      },
+      "validates": [
+        "schema_compliance",
+        "party_split_on_VERSUS",
+        "writ_amount_normalized_no_dollar_no_comma",
+        "completeness_score_1.0_when_all_fields_present"
+      ]
+    },
+    {
+      "test_id": "GT-V4-002",
+      "description": "Record with 'Address Not Available' - completeness should be reduced",
+      "fixture_file": "fixtures/test_row_no_address.html",
+      "raw_input_html": "<tr class=\"property-row-re\" data-csshnbr=\"131726\"><td style=\"min-width: 90px;\">865-878</td><td style=\"min-width: 400px;\">MIDFIRST BANK VERSUS ASHLEY F. ACKER</td><td>2/5/2025</td><td>Address Not Available</td><td>$103,821.16</td><td><img src=\"/JudpSale/Content/Images/red_cross.png\" class=\"centerImage\" /></td></tr>",
+      "expected_output": {
+        "case_id": "865-878",
+        "sale_date": "2025-02-05",
+        "address": "Address Not Available",
+        "writ_amount": "103821.16",
+        "case_style": "MIDFIRST BANK VERSUS ASHLEY F. ACKER",
+        "party_plaintiff": "MIDFIRST BANK",
+        "party_defendant": "ASHLEY F. ACKER",
+        "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+        "completeness_score": 0.83
+      },
+      "validates": [
+        "schema_compliance",
+        "party_split_simple_case",
+        "address_not_available_preserved",
+        "completeness_score_reduced_for_missing_address"
+      ]
+    },
+    {
+      "test_id": "GT-V4-003",
+      "description": "Minimal record with VS (not VERSUS), empty address, zero writ amount",
+      "fixture_file": "fixtures/test_row_minimal.html",
+      "raw_input_html": "<tr class=\"property-row-re\" data-csshnbr=\"999999\"><td style=\"min-width: 90px;\">999-001</td><td style=\"min-width: 400px;\">UNKNOWN PLAINTIFF VS UNKNOWN DEFENDANT</td><td>12/31/2025</td><td></td><td>$0.00</td><td><img src=\"/JudpSale/Content/Images/red_cross.png\" class=\"centerImage\" /></td></tr>",
+      "expected_output": {
+        "case_id": "999-001",
+        "sale_date": "2025-12-31",
+        "address": "Address Not Available",
+        "writ_amount": "0.00",
+        "case_style": "UNKNOWN PLAINTIFF VS UNKNOWN DEFENDANT",
+        "party_plaintiff": "UNKNOWN PLAINTIFF",
+        "party_defendant": "UNKNOWN DEFENDANT",
+        "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+        "completeness_score": 0.83
+      },
+      "validates": [
+        "schema_compliance",
+        "party_split_on_VS",
+        "empty_address_becomes_Address_Not_Available",
+        "zero_writ_amount_normalized"
+      ]
+    }
+  ]
+}

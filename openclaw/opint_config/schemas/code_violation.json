@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CodeViolation",
+  "description": "Code Violations / Compliance Notices",
+  "type": "object",
+  "required": ["case_number", "source_url"],
+  "properties": {
+    "case_number": {
+      "type": ["string", "null"],
+      "description": "Case/violation number"
+    },
+    "property_address": {
+      "type": ["string", "null"],
+      "description": "Property address as stated"
+    },
+    "violation_type": {
+      "type": ["string", "null"],
+      "description": "Type of violation"
+    },
+    "violation_description": {
+      "type": ["string", "null"],
+      "description": "Description as stated"
+    },
+    "issue_date": {
+      "type": ["string", "null"],
+      "description": "Date violation was issued"
+    },
+    "compliance_deadline": {
+      "type": ["string", "null"],
+      "description": "Deadline for compliance if stated"
+    },
+    "issuing_authority": {
+      "type": ["string", "null"],
+      "description": "Authority that issued the violation"
+    },
+    "status": {
+      "type": ["string", "null"],
+      "description": "Status ONLY if explicitly stated"
+    },
+    "document_url": {
+      "type": ["string", "null"],
+      "description": "Direct URL to document if available"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL this record was extracted from"
+    },
+    "raw_text_excerpt": {
+      "type": ["string", "null"],
+      "description": "Verbatim excerpt supporting extraction"
+    },
+    "confidence_score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Required if OCR was used"
+    }
+  },
+  "additionalProperties": false
+}

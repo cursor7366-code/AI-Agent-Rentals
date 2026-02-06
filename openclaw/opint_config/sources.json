@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "source_id": "orleans_civil_clerk",
+      "domain": "civil_court_dockets",
+      "source_url": "https://www.orleanscdc.com/",
+      "content_selector": null,
+      "follow_mode": "none",
+      "follow_link_selectors": [],
+      "max_pages_per_cycle": 10,
+      "base_interval_minutes": 360,
+      "priority": "high",
+      "notes": "Orleans Parish Civil District Court - needs manual URL discovery"
+    },
+    {
+      "source_id": "orleans_assessor_tax",
+      "domain": "tax_sales",
+      "source_url": "https://nolaassessor.com/",
+      "content_selector": null,
+      "follow_mode": "none",
+      "follow_link_selectors": [],
+      "max_pages_per_cycle": 10,
+      "base_interval_minutes": 720,
+      "priority": "normal",
+      "notes": "Orleans Parish Assessor - tax sale info"
+    },
+    {
+      "source_id": "nola_code_enforcement",
+      "domain": "code_violations",
+      "source_url": "https://data.nola.gov/Housing-Land-Use-and-Blight/Code-Enforcement-All-Inspections/uh5a-f7uw",
+      "content_selector": null,
+      "follow_mode": "none",
+      "follow_link_selectors": [],
+      "max_pages_per_cycle": 50,
+      "base_interval_minutes": 360,
+      "priority": "high",
+      "notes": "NOLA Open Data - Code Enforcement inspections"
+    },
+    {
+      "source_id": "ebr_clerk_civil",
+      "domain": "civil_court_dockets",
+      "source_url": "https://www.ebrclerkofcourt.org/",
+      "content_selector": null,
+      "follow_mode": "none",
+      "follow_link_selectors": [],
+      "max_pages_per_cycle": 10,
+      "base_interval_minutes": 360,
+      "priority": "high",
+      "notes": "East Baton Rouge Parish Clerk - civil dockets"
+    },
+    {
+      "source_id": "ebr_tax_sale",
+      "domain": "tax_sales",
+      "source_url": "https://www.ebrso.org/TaxSale",
+      "content_selector": null,
+      "follow_mode": "none",
+      "follow_link_selectors": [],
+      "max_pages_per_cycle": 20,
+      "base_interval_minutes": 720,
+      "priority": "normal",
+      "notes": "EBR Sheriff - Tax sale listings"
+    }
+  ]
+}

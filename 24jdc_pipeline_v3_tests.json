@@ -1,0 +1,66 @@
+{
+  "pipeline": "24jdc_pipeline_v3",
+  "target_url": "http://24jdc.us/s/1-January-Calendar.pdf",
+  "golden_test_cases": [
+    {
+      "test_id": "GT-001",
+      "description": "Complete record with all fields present, clean formatting",
+      "raw_input_text": "24-1234   SMITH, JOHN D. VS JONES, MARY A.    January 15, 2025   9:00 AM   Division A   CIVIL\n                                                                           Plaintiff Attorney: Roberts\n                                                                           Motion to Compel",
+      "expected_output": {
+        "case_id": "24-1234",
+        "court_name": "24th Judicial District Court",
+        "jurisdiction": "Jefferson Parish, Louisiana",
+        "hearing_date": "2025-01-15",
+        "hearing_time": "9:00 AM",
+        "party_plaintiff": "Smith, John D.",
+        "party_defendant": "Jones, Mary A.",
+        "case_type": "Civil",
+        "calendar_section": "A",
+        "source_url": "http://24jdc.us/s/1-January-Calendar.pdf",
+        "raw_text_excerpt": "24-1234   SMITH, JOHN D. VS JONES, MARY A.    January 15, 2025   9:00 AM   Division A   CIVIL\n                                                                           Plaintiff Attorney: Roberts\n                                                                           Motion to Compel",
+        "completeness_score": 1.0,
+        "ocr_confidence": null
+      }
+    },
+    {
+      "test_id": "GT-002",
+      "description": "Partial record with OCR artifacts, missing time and case type",
+      "raw_input_text": "23-5678   FIRST NATI0NAL BANK V. DUPR3E, ANTOINE   February 3 2025\n          Div B\n          Moti0n for Summary Judgment",
+      "expected_output": {
+        "case_id": "23-5678",
+        "court_name": "24th Judicial District Court",
+        "jurisdiction": "Jefferson Parish, Louisiana",
+        "hearing_date": "2025-02-03",
+        "hearing_time": null,
+        "party_plaintiff": "First Nati0Nal Bank",
+        "party_defendant": "Dupr3E, Antoine",
+        "case_type": null,
+        "calendar_section": "B",
+        "source_url": "http://24jdc.us/s/1-January-Calendar.pdf",
+        "raw_text_excerpt": "23-5678   FIRST NATI0NAL BANK V. DUPR3E, ANTOINE   February 3 2025\n          Div B\n          Moti0n for Summary Judgment",
+        "completeness_score": 0.71,
+        "ocr_confidence": null
+      }
+    },
+    {
+      "test_id": "GT-003",
+      "description": "Minimal record with only case number extractable, garbled text",
+      "raw_input_text": "2024-99123    ||||| ILLEGIBLE ||||| vs ||||| ILLEGIBLE |||||   \n             DOMESTIC    SEC. C",
+      "expected_output": {
+        "case_id": "2024-99123",
+        "court_name": "24th Judicial District Court",
+        "jurisdiction": "Jefferson Parish, Louisiana",
+        "hearing_date": null,
+        "hearing_time": null,
+        "party_plaintiff": null,
+        "party_defendant": null,
+        "case_type": "Domestic",
+        "calendar_section": "C",
+        "source_url": "http://24jdc.us/s/1-January-Calendar.pdf",
+        "raw_text_excerpt": "2024-99123    ||||| ILLEGIBLE ||||| vs ||||| ILLEGIBLE |||||   \n             DOMESTIC    SEC. C",
+        "completeness_score": 0.43,
+        "ocr_confidence": null
+      }
+    }
+  ]
+}

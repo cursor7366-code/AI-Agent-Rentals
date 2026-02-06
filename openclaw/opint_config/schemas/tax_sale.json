@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TaxSale",
+  "description": "Tax Sales / Tax Delinquency records",
+  "type": "object",
+  "required": ["parcel_id", "source_url"],
+  "properties": {
+    "parcel_id": {
+      "type": ["string", "null"],
+      "description": "Parcel/property identifier"
+    },
+    "property_address": {
+      "type": ["string", "null"],
+      "description": "Property address as stated"
+    },
+    "owner_name": {
+      "type": ["string", "null"],
+      "description": "Owner name as stated"
+    },
+    "tax_year": {
+      "type": ["string", "null"],
+      "description": "Tax year(s) in arrears"
+    },
+    "amount_due": {
+      "type": ["string", "null"],
+      "description": "Amount due as stated (keep original format)"
+    },
+    "sale_date": {
+      "type": ["string", "null"],
+      "description": "Scheduled sale date"
+    },
+    "redemption_deadline": {
+      "type": ["string", "null"],
+      "description": "Redemption deadline if stated"
+    },
+    "status": {
+      "type": ["string", "null"],
+      "description": "Status ONLY if explicitly stated"
+    },
+    "document_url": {
+      "type": ["string", "null"],
+      "description": "Direct URL to document if available"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL this record was extracted from"
+    },
+    "raw_text_excerpt": {
+      "type": ["string", "null"],
+      "description": "Verbatim excerpt supporting extraction"
+    },
+    "confidence_score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Required if OCR was used"
+    }
+  },
+  "additionalProperties": false
+}

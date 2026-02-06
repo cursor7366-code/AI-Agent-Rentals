@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Permit",
+  "description": "Permits - Applications / Failures / Withdrawals",
+  "type": "object",
+  "required": ["permit_number", "source_url"],
+  "properties": {
+    "permit_number": {
+      "type": ["string", "null"],
+      "description": "Permit number/identifier"
+    },
+    "property_address": {
+      "type": ["string", "null"],
+      "description": "Property address as stated"
+    },
+    "permit_type": {
+      "type": ["string", "null"],
+      "description": "Type of permit"
+    },
+    "application_date": {
+      "type": ["string", "null"],
+      "description": "Date of application"
+    },
+    "status": {
+      "type": ["string", "null"],
+      "description": "Status as stated (applied/approved/failed/withdrawn)"
+    },
+    "failure_reason": {
+      "type": ["string", "null"],
+      "description": "Reason for failure if stated"
+    },
+    "issuing_department": {
+      "type": ["string", "null"],
+      "description": "Department handling the permit"
+    },
+    "document_url": {
+      "type": ["string", "null"],
+      "description": "Direct URL to document if available"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL this record was extracted from"
+    },
+    "raw_text_excerpt": {
+      "type": ["string", "null"],
+      "description": "Verbatim excerpt supporting extraction"
+    },
+    "confidence_score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Required if OCR was used"
+    }
+  },
+  "additionalProperties": false
+}

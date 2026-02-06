@@ -1,0 +1,122 @@
+[
+  {
+    "case_id": "855-015",
+    "sale_date": "2025-02-05",
+    "address": "1313 HELIOS AVENUE METAIRIE, LA",
+    "writ_amount": "117159.26",
+    "case_style": "NEWREZ LLC DBA SHELLPOINT MORTGAGE SERVICING (FKA SPECIALIZED LOAN SERVICING LLC) VS EDWARD JOSEPH CORASS III, INDEPENDENT ADMINISTRATOR OF EDWARD JOSEPH CORASS AND JOY RITA COOK CORASS",
+    "party_plaintiff": "NEWREZ LLC DBA SHELLPOINT MORTGAGE SERVICING (FKA SPECIALIZED LOAN SERVICING LLC)",
+    "party_defendant": "EDWARD JOSEPH CORASS III, INDEPENDENT ADMINISTRATOR OF EDWARD JOSEPH CORASS AND JOY RITA COOK CORASS",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>855-015</td><td>NEWREZ LLC DBA SHELLPOINT... VS EDWARD JOSEPH CORASS III...</td><td>2/5/2025</td><td>1313 HELIOS AVENUE METAIRIE, LA</td><td>$117,159.26</td>",
+    "completeness_score": 1.0
+  },
+  {
+    "case_id": "855-115",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "87958.68",
+    "case_style": "NEWREZ LLC D/B/A SHELLPOINT MORTGAGE SERVICING VS MARIA SANDOVAL TREGLE A/K/A MARIA GABRIELA SANDOVAL TREGLE...",
+    "party_plaintiff": "NEWREZ LLC D/B/A SHELLPOINT MORTGAGE SERVICING",
+    "party_defendant": "MARIA SANDOVAL TREGLE A/K/A MARIA GABRIELA SANDOVAL TREGLE...",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>855-115</td><td>NEWREZ LLC... VS MARIA SANDOVAL TREGLE...</td><td>2/5/2025</td><td>Address Not Available</td><td>$87,958.68</td>",
+    "completeness_score": 0.83
+  },
+  {
+    "case_id": "857-147",
+    "sale_date": "2025-02-05",
+    "address": "355 AZALEA DRIVE WESTWEGO, LA",
+    "writ_amount": "107697.41",
+    "case_style": "HMC ASSETS, LLC SOLELY IN ITS CAPACITY AS SEPARATE TRUSTEE OF CAM XI TRUST VS ALCIDE B. CLAYTON",
+    "party_plaintiff": "HMC ASSETS, LLC SOLELY IN ITS CAPACITY AS SEPARATE TRUSTEE OF CAM XI TRUST",
+    "party_defendant": "ALCIDE B. CLAYTON",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>857-147</td><td>HMC ASSETS, LLC... VS ALCIDE B. CLAYTON</td><td>2/5/2025</td><td>355 AZALEA DRIVE WESTWEGO, LA</td><td>$107,697.41</td>",
+    "completeness_score": 1.0
+  },
+  {
+    "case_id": "858-157",
+    "sale_date": "2025-02-05",
+    "address": "6540 LAPALCO BLVD HARVEY, LA",
+    "writ_amount": "190653.30",
+    "case_style": "CADLES OF WEST VIRGINIA, LLC VS ROUND TABLE REAL ESTATE INVESTMENT GROUP, LLC",
+    "party_plaintiff": "CADLES OF WEST VIRGINIA, LLC",
+    "party_defendant": "ROUND TABLE REAL ESTATE INVESTMENT GROUP, LLC",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>858-157</td><td>CADLES OF WEST VIRGINIA, LLC VS ROUND TABLE...</td><td>2/5/2025</td><td>6540 LAPALCO BLVD HARVEY, LA</td><td>$190,653.30</td>",
+    "completeness_score": 1.0
+  },
+  {
+    "case_id": "858-632",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "48722.57",
+    "case_style": "INVESTAR BANK, N.A. VS RON T. ST. PIERRE AND PAMELA BERRY ST. PIERRE",
+    "party_plaintiff": "INVESTAR BANK, N.A.",
+    "party_defendant": "RON T. ST. PIERRE AND PAMELA BERRY ST. PIERRE",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>858-632</td><td>INVESTAR BANK... VS RON T. ST. PIERRE...</td><td>2/5/2025</td><td>Address Not Available</td><td>$48,722.57</td>",
+    "completeness_score": 0.83
+  },
+  {
+    "case_id": "858-711",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "220135.68",
+    "case_style": "FEDERAL HOME LOAN MORTGAGE CORPORATION AS TRUSTEE FOR FREDDIE MAC SEASONED CREDIT RISK TRANSFER TRUST, SERIES 2018-1 VS CORNELIA BARDALES AND FRANCISCO DUSSAN",
+    "party_plaintiff": "FEDERAL HOME LOAN MORTGAGE CORPORATION AS TRUSTEE FOR FREDDIE MAC SEASONED CREDIT RISK TRANSFER TRUST, SERIES 2018-1",
+    "party_defendant": "CORNELIA BARDALES AND FRANCISCO DUSSAN",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>858-711</td><td>FEDERAL HOME LOAN... VS CORNELIA BARDALES...</td><td>2/5/2025</td><td>Address Not Available</td><td>$220,135.68</td>",
+    "completeness_score": 0.83
+  },
+  {
+    "case_id": "858-670",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "92655.10",
+    "case_style": "WILMINGTON SAVINGS FUND SOCIETY, FSB... VS TAWAUN A. SYLVESTER...",
+    "party_plaintiff": "WILMINGTON SAVINGS FUND SOCIETY, FSB, NOT IN ITS INDIVIDUAL CAPACITY, BUT SOLELY AS OWNER TRUSTEE FOR CSMC 2018-RPL6 TRUST",
+    "party_defendant": "TAWAUN A. SYLVESTER A/K/A TAWAUN SYLVESTER AND LATOYA A. SYLVESTER A/K/A LATOYA SYLVESTER",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>858-670</td><td>WILMINGTON SAVINGS... VS TAWAUN A. SYLVESTER...</td><td>2/5/2025</td><td>Address Not Available</td><td>$92,655.10</td>",
+    "completeness_score": 0.83
+  },
+  {
+    "case_id": "851-729",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "85479.36",
+    "case_style": "WILIMINGTON TRUST, NATIONAL ASSOCIATION... VS CHRISTOPHER M. RODRIGUE",
+    "party_plaintiff": "WILIMINGTON TRUST, NATIONAL ASSOCIATION, NOT IN ITS INDIVIDUAL CAPACITY, BUT SOLELY AS TRUSTEE OF BRAVO RESIDENTIAL FUNDING TRUST 2019-2",
+    "party_defendant": "CHRISTOPHER M. RODRIGUE",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>851-729</td><td>WILIMINGTON TRUST... VS CHRISTOPHER M. RODRIGUE</td><td>2/5/2025</td><td>Address Not Available</td><td>$85,479.36</td>",
+    "completeness_score": 0.83
+  },
+  {
+    "case_id": "852-895",
+    "sale_date": "2025-02-05",
+    "address": "2600 WYOMING DRIVE MARRERO, LA",
+    "writ_amount": "89191.94",
+    "case_style": "U.S. BANK TRUST NATIONAL ASSOCIATION... VS MACK A. COBB AND BARBARA COBB...",
+    "party_plaintiff": "U.S. BANK TRUST NATIONAL ASSOCIATION, NOT IN ITS INDIVIDUAL CAPACITY, BUT SOLEY AS TRUSTEE OF CITIGROUP MORTGAGE LOAN TRUST 2018-RP3",
+    "party_defendant": "MACK A. COBB AND BARBARA COBB A/K/A BARBARA RICHARD COBB",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>852-895</td><td>U.S. BANK TRUST... VS MACK A. COBB...</td><td>2/5/2025</td><td>2600 WYOMING DRIVE MARRERO, LA</td><td>$89,191.94</td>",
+    "completeness_score": 1.0
+  },
+  {
+    "case_id": "841-522",
+    "sale_date": "2025-02-05",
+    "address": "Address Not Available",
+    "writ_amount": "112634.61",
+    "case_style": "BANK OF NEW YORK MELLON AS TRUSTEE FOR CIT HOME EQUITY LOAN TRUST 2003-1 vs LARRY ALBERT HERMANN...",
+    "party_plaintiff": "BANK OF NEW YORK MELLON AS TRUSTEE FOR CIT HOME EQUITY LOAN TRUST 2003-1",
+    "party_defendant": "LARRY ALBERT HERMANN A/K/A LARRY ATLAS HERMANN, SR. INDIVIDUALLY AND AS SURVIVING SPOUSE IN COMMUNITY WITH PATRICIA ROBICHEAUX HERMANN A/K/A PATRICIA ANN ROBICHEAUX HERMANN",
+    "source_url": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+    "raw_row_text_excerpt": "<td>841-522</td><td>BANK OF NEW YORK MELLON... vs LARRY ALBERT HERMANN...</td><td>2/5/2025</td><td>Address Not Available</td><td>$112,634.61</td>",
+    "completeness_score": 0.83
+  }
+]

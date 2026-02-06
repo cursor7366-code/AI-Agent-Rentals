@@ -1,0 +1,59 @@
+services:
+  egress-proxy:
+    image: ubuntu/squid:5.2-22.04_beta
+    volumes:
+      - ./opint_config/egress_allowlist_domains.txt:/etc/squid/allowed_domains.txt:ro
+      - ./opint_config/squid.conf:/etc/squid/squid.conf:ro
+    networks:
+      - opint_fetch_net
+      - default
+    healthcheck:
+      test: ["CMD", "squid", "-k", "check"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  doc-parser:
+    build: ./parser
+    networks:
+      - opint_parse_net
+    expose:
+      - "8000"
+    volumes:
+      - ./opint_data/archive:/data/archive:ro
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  pipeline:
+    build: .
+    depends_on:
+      egress-proxy:
+        condition: service_healthy
+      doc-parser:
+        condition: service_healthy
+    environment:
+      - HTTP_PROXY=http://egress-proxy:3128
+      - HTTPS_PROXY=http://egress-proxy:3128
+      - DOC_PARSER_URL=http://doc-parser:8000
+    networks:
+      - opint_fetch_net
+      - opint_parse_net
+    volumes:
+      - ./opint_config:/app/opint_config:ro
+      - ./opint_data:/data:rw
+      - ./opint_logs:/app/opint_logs:rw
+      - ./opint_reports:/app/opint_reports:rw
+
+networks:
+  opint_fetch_net:
+    internal: true
+  opint_parse_net:
+    internal: true

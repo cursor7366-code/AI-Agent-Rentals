@@ -1,0 +1,68 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "CivilDocket",
+  "description": "Civil Court Dockets - Foreclosures / Judgments / Evictions",
+  "type": "object",
+  "required": ["case_id", "source_url"],
+  "properties": {
+    "case_id": {
+      "type": ["string", "null"],
+      "description": "Unique case identifier from the court"
+    },
+    "court_name": {
+      "type": ["string", "null"],
+      "description": "Name of the court"
+    },
+    "jurisdiction": {
+      "type": ["string", "null"],
+      "description": "Parish/County jurisdiction"
+    },
+    "filing_type": {
+      "type": ["string", "null"],
+      "description": "Literal filing type (e.g. 'Petition for Foreclosure')"
+    },
+    "filing_date": {
+      "type": ["string", "null"],
+      "description": "Date of filing (ISO 8601 or as-stated)"
+    },
+    "party_plaintiff": {
+      "type": ["string", "null"],
+      "description": "Plaintiff name as stated"
+    },
+    "party_defendant": {
+      "type": ["string", "null"],
+      "description": "Defendant name as stated"
+    },
+    "property_address": {
+      "type": ["string", "null"],
+      "description": "Property address if stated"
+    },
+    "document_type": {
+      "type": ["string", "null"],
+      "description": "Type of document"
+    },
+    "document_url": {
+      "type": ["string", "null"],
+      "description": "Direct URL to document if available"
+    },
+    "status": {
+      "type": ["string", "null"],
+      "description": "Case status ONLY if explicitly stated"
+    },
+    "raw_text_excerpt": {
+      "type": ["string", "null"],
+      "description": "Verbatim excerpt supporting extraction"
+    },
+    "source_url": {
+      "type": "string",
+      "description": "URL this record was extracted from"
+    },
+    "confidence_score": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Required if OCR was used"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "24jdc_pipeline_v3_output",
+  "title": "24JDC Court Calendar Hearing Record",
+  "description": "Output schema for 24th Judicial District Court calendar PDF extraction pipeline v3",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "case_id",
+      "court_name",
+      "jurisdiction",
+      "hearing_date",
+      "hearing_time",
+      "party_plaintiff",
+      "party_defendant",
+      "case_type",
+      "calendar_section",
+      "source_url",
+      "raw_text_excerpt",
+      "completeness_score",
+      "ocr_confidence"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "case_id": {
+        "type": ["string", "null"],
+        "description": "Court case identifier (e.g., '24-1234', '2024-99123')"
+      },
+      "court_name": {
+        "type": "string",
+        "const": "24th Judicial District Court",
+        "description": "Fixed value for this pipeline"
+      },
+      "jurisdiction": {
+        "type": "string",
+        "const": "Jefferson Parish, Louisiana",
+        "description": "Fixed value for this pipeline"
+      },
+      "hearing_date": {
+        "type": ["string", "null"],
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "ISO 8601 date format (YYYY-MM-DD) or null if not extractable"
+      },
+      "hearing_time": {
+        "type": ["string", "null"],
+        "description": "Time string as extracted (e.g., '9:00 AM', '10:30 AM') or null"
+      },
+      "party_plaintiff": {
+        "type": ["string", "null"],
+        "description": "Plaintiff name in title case or null if not extractable"
+      },
+      "party_defendant": {
+        "type": ["string", "null"],
+        "description": "Defendant name in title case or null if not extractable"
+      },
+      "case_type": {
+        "type": ["string", "null"],
+        "description": "Case type in title case (e.g., 'Civil', 'Criminal', 'Domestic') or null"
+      },
+      "calendar_section": {
+        "type": ["string", "null"],
+        "description": "Court section/division identifier (e.g., 'A', 'B', 'C') or null"
+      },
+      "source_url": {
+        "type": "string",
+        "const": "http://24jdc.us/s/1-January-Calendar.pdf",
+        "description": "Fixed source URL for this pipeline"
+      },
+      "raw_text_excerpt": {
+        "type": "string",
+        "maxLength": 500,
+        "description": "First 500 characters of the text block used for extraction"
+      },
+      "completeness_score": {
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": "Ratio of populated fields to total extractable fields (7)"
+      },
+      "ocr_confidence": {
+        "type": "null",
+        "description": "Always null — no OCR engine confidence is measured"
+      }
+    }
+  }
+}

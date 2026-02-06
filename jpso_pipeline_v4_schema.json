@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "jpso_pipeline_v4_output",
+  "title": "JPSO Sheriff Sales Record",
+  "description": "Output schema for Jefferson Parish Sheriff Office judicial sales HTML extraction pipeline v4",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "case_id",
+      "sale_date",
+      "address",
+      "writ_amount",
+      "case_style",
+      "party_plaintiff",
+      "party_defendant",
+      "source_url",
+      "raw_row_text_excerpt",
+      "completeness_score"
+    ],
+    "additionalProperties": false,
+    "properties": {
+      "case_id": {
+        "type": ["string", "null"],
+        "description": "Court case identifier (e.g., '865-878')"
+      },
+      "sale_date": {
+        "type": ["string", "null"],
+        "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+        "description": "ISO 8601 date format (YYYY-MM-DD) or null if not extractable"
+      },
+      "address": {
+        "type": "string",
+        "description": "Property address or 'Address Not Available'"
+      },
+      "writ_amount": {
+        "type": ["string", "null"],
+        "pattern": "^\\d+\\.\\d{2}$",
+        "description": "Normalized decimal string (e.g., '103821.16') or null"
+      },
+      "case_style": {
+        "type": ["string", "null"],
+        "description": "Full case style text (plaintiff VERSUS defendant)"
+      },
+      "party_plaintiff": {
+        "type": ["string", "null"],
+        "description": "Plaintiff name extracted from case_style or null"
+      },
+      "party_defendant": {
+        "type": ["string", "null"],
+        "description": "Defendant name extracted from case_style or null"
+      },
+      "source_url": {
+        "type": "string",
+        "const": "https://eservices2.jpso.com/JudpSale/Home/RealEstate",
+        "description": "Fixed source URL for this pipeline"
+      },
+      "raw_row_text_excerpt": {
+        "type": "string",
+        "maxLength": 300,
+        "description": "First 300 characters of the raw HTML row"
+      },
+      "completeness_score": {
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 1.0,
+        "description": "Ratio of populated key fields to total key fields (6)"
+      }
+    }
+  }
+}
