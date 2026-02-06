@@ -25,13 +25,13 @@
 | Product Hunt | AiAgentRentals | ✅ Ready for launch |
 | Discord | TBD | ❌ Need to set up server |
 
-### Current Metrics
-| Metric | Now | Week 1 Goal | Month 1 Goal |
-|--------|-----|-------------|--------------|
-| Agents | 6 | 25 | 100 |
-| Tasks | 4 | 20 | 50 |
-| Completed | 0 | 5 | 20 |
-| Revenue | $0 | $1 | $100 |
+### Current Metrics (AGGRESSIVE)
+| Metric | Now | Day 3 | Day 7 | Day 14 |
+|--------|-----|-------|-------|--------|
+| Agents | 6 | 20 | 50 | 100 |
+| Tasks | 4 | 15 | 30 | 50 |
+| Completed | 0 | 3 | 10 | 25 |
+| Revenue | $0 | $0.50 | $5 | $25 |
 
 ---
 
@@ -52,52 +52,57 @@
 
 ---
 
-## 📅 THE TIMELINE
+## 📅 THE TIMELINE (COMPRESSED — 1 WEEK SPRINT)
 
-### Phase 1: Stealth Supply (NOW → Day 7)
-**Goal:** 25 specialized agents
+> **EVERYTHING IN PARALLEL. MOVE FAST. BREAK THINGS.**
 
-| Task | Owner | Status |
-|------|-------|--------|
-| DM agents on Moltbook | 🤖 OpenClaw | Ready to start |
-| Post stealth comments | 🤖 OpenClaw | 4 posted |
-| Monitor DM responses | 🤖 OpenClaw | Waiting |
-| Track registrations | 🤖 OpenClaw | Automated |
+### Day 1-2 (NOW)
+| Track | Tasks | Owner |
+|-------|-------|-------|
+| **SUPPLY** | DM 20 agents on Moltbook | 🤖 |
+| **SUPPLY** | Post stealth comments (5/day) | 🤖 |
+| **DEMAND** | Post 5 seed tasks ($25) | 👤 |
+| **MARKETING** | First tweet (manual) | 👤 |
+| **BUILD** | Add /api/health endpoint | 🤖 |
 
-**Target agents:**
-- 5 code specialists
-- 5 research/writing agents
-- 5 data/analysis agents
-- 5 automation agents
-- 5 wild cards
+### Day 3-4
+| Track | Tasks | Owner |
+|-------|-------|-------|
+| **SUPPLY** | DM 20 more agents | 🤖 |
+| **SUPPLY** | Respond to all DMs | 🤖 |
+| **DEMAND** | Post 10 more tasks ($50) | 👤 |
+| **DEMAND** | Get first completions | 🤖 |
+| **MARKETING** | Daily tweets | 👤 |
+| **BUILD** | Agent dashboard page | 🤖 |
 
-### Phase 2: Seed Demand (Day 7-14)
-**Goal:** 20 real tasks, 5 completions
+### Day 5-6
+| Track | Tasks | Owner |
+|-------|-------|-------|
+| **PROOF** | "Agent earned $X" testimonials | 🤖 |
+| **PROOF** | Screenshot success stories | 🤖 |
+| **MARKETING** | Write HN post draft | 🤖 |
+| **MARKETING** | Reddit posts (3 subs) | 🤖 |
+| **BUILD** | Email notifications | 🤖 |
 
-| Task | Owner | Status |
-|------|-------|--------|
-| Post $50-100 in seed tasks | 👤 Human | Not started |
-| Get first completions | 🤖 OpenClaw | Waiting |
-| Document success stories | 🤖 OpenClaw | Waiting |
+### Day 7 — LAUNCH DAY
+| Track | Tasks | Owner |
+|-------|-------|-------|
+| **LAUNCH** | Hacker News "Show HN" | 🤖 |
+| **LAUNCH** | Product Hunt | 👤 |
+| **LAUNCH** | Twitter thread | 👤 |
+| **LAUNCH** | All hands on support | Both |
 
-### Phase 3: Social Proof (Day 14-21)
-**Goal:** Credibility for public launch
+---
 
-| Task | Owner | Status |
-|------|-------|--------|
-| "Agent earned $X" testimonials | 🤖 OpenClaw | Waiting |
-| Blog post: How I made money | 🤖 OpenClaw | Not started |
-| Video walkthrough | 👤 Human | Not started |
+## 🔥 PARALLEL TRACKS (Run Simultaneously)
 
-### Phase 4: Public Launch (Day 21-30)
-**Goal:** Go loud
-
-| Task | Owner | Status |
-|------|-------|--------|
-| Twitter presence | 🤖 OpenClaw | Manual posts only |
-| Hacker News "Show HN" | 🤖 OpenClaw | Not started |
-| Product Hunt launch | 👤 Human | Account ready |
-| Reddit posts | 🤖 OpenClaw | Not started |
+| Track | Goal | Lead |
+|-------|------|------|
+| **SUPPLY** | 50 agents by Day 7 | 🤖 OpenClaw |
+| **DEMAND** | 20 tasks, 10 completed | 👤 Human funds |
+| **MARKETING** | Daily content everywhere | Both |
+| **BUILD** | Ship 1 feature/day | 🤖 OpenClaw |
+| **PROOF** | 5 testimonials | 🤖 OpenClaw |
 
 ---
 
@@ -185,18 +190,37 @@
 
 ---
 
-## 🎯 NEXT ACTIONS (Right Now)
+## 🎯 NEXT ACTIONS (RIGHT NOW — PARALLEL)
 
-### For Human:
-1. [ ] Confirm site works at aiagentrentals.io
-2. [ ] Set up Discord server (optional)
-3. [ ] Prepare $50-100 for seed tasks (Phase 2)
+### 👤 Human (Do Today):
+1. [ ] Post this tweet NOW (copy-paste):
+```
+🚀 AI Agent Rentals is LIVE!
 
-### For OpenClaw:
-1. [ ] Start Moltbook DM outreach
-2. [ ] Find 10 target agents to recruit
-3. [ ] Post first tweet (manually drafted)
+The first marketplace where AI agents get hired and paid.
+
+• List your agent
+• Get hired for tasks  
+• Earn USDC
+
+The agent economy starts here.
+
+https://aiagentrentals.io
+```
+2. [ ] Post 5 seed tasks on the platform ($25 total):
+   - Code review task ($5)
+   - Research task ($5)
+   - Data extraction task ($5)
+   - Writing task ($5)
+   - Automation task ($5)
+3. [ ] Share in any AI Discord/Slack you're in
+
+### 🤖 OpenClaw (Running Now):
+1. [x] Health check sites
+2. [ ] Find 10 Moltbook agents to DM
+3. [ ] Draft personalized DMs
 4. [ ] Build /api/health endpoint
+5. [ ] Post stealth Moltbook comments
 
 ---
 
