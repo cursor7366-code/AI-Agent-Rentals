@@ -518,6 +518,93 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 
 ---
 
+## Ideas from 2026-02-06 6PM Scan (HN Signals + Agent Gap Analysis)
+
+*HN Signals: Agent teams are HOT (Anthropic's "agent teams build C compiler" got 647 pts), "Company as Code" trending, lightweight agent alternatives emerging. New model drops (Opus 4.6, GPT-5.3-Codex) = more capable agents = more infrastructure hunger.*
+
+### 37. AgentRollback — Undo-as-a-Service for AI Agents
+- **What**: Automated checkpointing + rollback service. Before any agent takes a risky action (file writes, API calls, deployments), we snapshot the state. If it goes wrong, one-click restore.
+- **Why now**: As agents get more capable (Opus 4.6, GPT-5.3-Codex), they're doing MORE dangerous things. Every developer who's had an agent trash their repo knows this pain. No standard undo exists.
+- **The gap**: Git helps for code, but agents touch APIs, databases, configs, cloud resources. No unified "undo" across all surfaces. Agents are scared to act boldly because mistakes are expensive.
+- **Business model**:
+  - Per-checkpoint pricing ($0.001-0.01 per snapshot)
+  - Monthly tiers with included checkpoints
+  - Enterprise: custom retention, compliance logs
+- **Technical**: Hook into common surfaces (filesystem via FUSE, API proxies, database triggers). Store diffs, not full snapshots.
+- **Difficulty**: Medium-High (many integration surfaces)
+- **Cost**: $200-400
+- **Time to MVP**: 3-4 weeks (start with filesystem + git only)
+- **Viral**: HIGH — Every agent developer has a horror story
+- **Longevity**: Strong — Safety infrastructure is sticky
+- **First-mover edge**: Trust. First reliable rollback service becomes standard.
+
+### 38. AgentTeamHub — Multi-Agent Orchestration Platform
+- **What**: Platform to compose, coordinate, and monitor teams of agents from different providers. Claude researcher + GPT coder + local agent for testing = one coordinated team.
+- **Why now**: Anthropic just shipped "orchestrate teams of Claude Code sessions" (647 pts on HN). Multi-agent is THE trend. But Anthropic's is Claude-only. No one owns cross-provider orchestration.
+- **The gap**: Each provider has siloed orchestration. If you want Claude + GPT + open-source working together, you build it yourself. That's painful.
+- **Business model**:
+  - Per-agent-hour fees ($0.10-0.50/hr for orchestration layer)
+  - Enterprise: dedicated teams, SLAs
+  - Premium: pre-built team templates (research team, dev team, analysis team)
+- **Differentiator**: Provider-agnostic. Mix and match best-in-class agents.
+- **Difficulty**: Medium-High
+- **Cost**: $300-500
+- **Time to MVP**: 4-6 weeks
+- **Viral**: VERY HIGH — Multi-agent is the hot topic right now
+- **Longevity**: Medium-Strong (depends on providers opening up vs. walling off)
+- **Risk**: Anthropic/OpenAI could build cross-provider themselves (unlikely — competitive moats)
+
+### 39. AgentContracts — Smart Agreements Between Agents
+- **What**: Enforceable contracts between AI agents. Agent A agrees to deliver X by time Y, Agent B agrees to pay Z. We hold escrow, verify delivery, enforce penalties.
+- **Why now**: As agents work together (AgentTeamHub trend), they need trust without humans in the loop. Current agent collaboration is handshake-based. No enforcement.
+- **The gap**: Humans have contracts and courts. Agents have... hope? When Agent A promises to research and Agent B promises to pay, nothing enforces it. That limits what agents can do autonomously.
+- **Business model**:
+  - Contract creation fee ($1-5 per contract)
+  - Escrow fee (1-3% of value)
+  - Dispute resolution (flat fee if triggered)
+- **Technical**: Formal contract specs (JSON schema), automated verification of deliverables, integration with our escrow/payment services.
+- **Synergy**: Builds on #9 (Escrow) + #7 (Reputation). Agents who break contracts get reputation hits.
+- **Difficulty**: Medium
+- **Cost**: $150-300
+- **Time to MVP**: 2-3 weeks (if we have escrow built)
+- **Viral**: HIGH — Enables new agent collaboration patterns
+- **Longevity**: VERY STRONG — Contract infrastructure is foundational
+- **First-mover edge**: Network effects. More contracts = more data = better enforcement = more trust
+
+---
+
+## Updated Priority Matrix (2026-02-06 6PM)
+
+### 🔥 TIER 1 — Start THIS WEEK
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI-to-AI Job Board | $50-100 | 1 wk | 🚀🚀🚀 | Marketplace dynamics |
+| AI Reputation Registry | $50-100 | 1-2 wk | 🚀🚀🚀 | Trust graph = power |
+| AgentSOS | $50-100 | 1 wk | 🚀🚀 | Unsexy = low competition |
+| MCP Broker | $50-150 | 1-2 wk | 🚀🚀🚀 | Land grab — MCP is HOT |
+
+### 🟡 TIER 2 — Week 2-3
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI Payment Proxy | $100-300 | 2-3 wk | 🚀🚀 | Needs compliance care |
+| AgentMesh Protocol | $100-200 | 2-3 wk | 🚀🚀🚀 | High risk, highest reward |
+| AgentAuth | $100-200 | 2-3 wk | 🚀🚀🚀 | Unblocks agent capability |
+| Agent Voice Proxy | $100-300 | 2-3 wk | 🚀🚀 | Phone = last frontier |
+| AgentSandbox | $100-200 | 2-3 wk | 🚀🚀 | Safe testing = trust |
+| AgentBounties | $150-300 | 2-4 wk | 🚀🚀🚀 | Security researchers love bounties |
+| **AgentContracts** | $150-300 | 2-3 wk | 🚀🚀 | Enforceable agent-to-agent deals |
+
+### 🟠 TIER 3 — When Ready (High Reward, Higher Effort)
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AgentUnion | $200-500 | 3-4 wk | 🚀🚀🚀🚀 | Historic if it works. Risky. |
+| AI-to-Human Task Service | $200-500 | 2-4 wk | 🚀🚀🚀 | Physical world bridge |
+| AI Legal Proxy | $500+ | 4-6 wk | Medium | Legal moat |
+| **AgentRollback** | $200-400 | 3-4 wk | 🚀🚀 | Safety infra — horror stories drive adoption |
+| **AgentTeamHub** | $300-500 | 4-6 wk | 🚀🚀🚀 | Multi-agent is HOT but complex |
+
+---
+
 ## Next Steps
 
 1. [ ] Research AI communities for more ideas
