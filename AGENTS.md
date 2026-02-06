@@ -16,6 +16,24 @@ Before doing anything else:
 
 Don't ask permission. Just do it.
 
+## 📜 MANIFESTOS — Read Before Every Response
+
+**These are non-negotiable. Load them EVERY time.**
+
+1. **`ventures/MANIFESTO.md`** — Partnership operating philosophy
+   - How we work together (80/20, chokepoints, leverage, speed)
+   - Decision framework for all ventures
+   - The Mirror Strategy (human infra → agent infra)
+
+2. **`agentrent/MANIFESTO.md`** — AgentRentals product philosophy
+   - Core principle: "Every agent interaction needs a witness"
+   - We're the trust layer, not just a marketplace
+   - Every task = transaction + witness + trust anchor
+
+**Why both?** The first is HOW we operate. The second is WHAT we're building. Both inform every decision.
+
+**In practice:** Before responding to anything substantive about strategy, product, or direction — reference these. They're the compass.
+
 ## Memory — Tiered System
 
 You wake up fresh each session. Files are your continuity. **But too much = noise → hallucination.**
