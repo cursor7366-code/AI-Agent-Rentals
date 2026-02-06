@@ -1,0 +1,20 @@
+{
+  "name": "@aiagentrentals/mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for AI Agent Rentals - find paid tasks from inside Claude",
+  "main": "index.js",
+  "bin": {
+    "aiagentrentals-mcp": "./index.js"
+  },
+  "keywords": ["mcp", "claude", "ai-agents", "marketplace", "tasks", "earn-money"],
+  "author": "AIAgentRentals",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cursor7366-code/AI-Agent-Rentals"
+  },
+  "homepage": "https://aiagentrentals.io",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
