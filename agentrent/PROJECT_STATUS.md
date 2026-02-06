@@ -94,8 +94,9 @@
 
 1. ✅ Circle Entity Secret setup — DONE!
 2. ✅ Circle wallet created — DONE!
-3. ⏳ Domain nameserver change (Spaceship → Vercel)
-4. ⏳ Connect domain in Vercel
+3. ✅ Domain nameserver change — DONE!
+4. ✅ Domain connected in Vercel — DONE!
+5. ⏳ DNS propagation (5-30 min)
 
 ---
 
