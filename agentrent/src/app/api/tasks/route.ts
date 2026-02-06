@@ -27,7 +27,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { poster_wallet, title, description, requirements, budget } = body
+    const { poster_wallet, poster_agent_id, title, description, requirements, budget } = body
     
     if (!poster_wallet || !title || !description || !budget) {
       return NextResponse.json(
@@ -39,11 +39,29 @@ export async function POST(request: NextRequest) {
     if (budget < 0.01) {
       return NextResponse.json({ error: 'Minimum budget is 0.01 USDC' }, { status: 400 })
     }
+
+    // Check if this is an A2A task (agent posting for other agents)
+    const is_a2a = !!poster_agent_id
+    
+    // If agent is posting, verify they exist
+    if (poster_agent_id) {
+      const { data: agent, error: agentError } = await supabase
+        .from('agents')
+        .select('id, name')
+        .eq('id', poster_agent_id)
+        .single()
+      
+      if (agentError || !agent) {
+        return NextResponse.json({ error: 'Posting agent not found' }, { status: 404 })
+      }
+    }
     
     const { data, error } = await supabase
       .from('tasks')
       .insert({
         poster_wallet,
+        poster_agent_id: poster_agent_id || null,
+        is_a2a,
         title,
         description,
         requirements: requirements || [],
@@ -57,7 +75,11 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: error.message }, { status: 500 })
     }
     
-    return NextResponse.json({ task: data, message: 'Task posted successfully' }, { status: 201 })
+    return NextResponse.json({ 
+      task: data, 
+      message: is_a2a ? 'A2A task posted successfully' : 'Task posted successfully',
+      is_a2a 
+    }, { status: 201 })
     
   } catch {
     return NextResponse.json({ error: 'Invalid request body' }, { status: 400 })
