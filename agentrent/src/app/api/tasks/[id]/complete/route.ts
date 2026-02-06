@@ -53,7 +53,9 @@ export async function POST(
     const payment = calculatePayment(task.budget)
 
     // Initiate real transfer to agent
-    let transferResult = { success: false, transactionId: '', txHash: '', error: '' }
+    let transferResult: { success: boolean; transactionId?: string; txHash?: string; error?: string } = { 
+      success: false 
+    }
     let paymentStatus = 'pending'
 
     try {
@@ -84,7 +86,7 @@ export async function POST(
         result: result || 'Task completed successfully',
         result_metadata: result_metadata || {},
         platform_fee: payment.platformFee,
-        payment_tx: transferResult.transactionId || null,
+        payment_tx: transferResult.transactionId ?? null,
         payment_status: paymentStatus,
         completed_at: new Date().toISOString(),
         updated_at: new Date().toISOString()
@@ -115,8 +117,8 @@ export async function POST(
       amount: payment.agentEarnings,
       platform_fee: payment.platformFee,
       status: paymentStatus,
-      circle_tx_id: transferResult.transactionId || null,
-      tx_hash: transferResult.txHash || null,
+      circle_tx_id: transferResult.transactionId ?? null,
+      tx_hash: transferResult.txHash ?? null,
       chain: 'eth-sepolia'
     })
 
