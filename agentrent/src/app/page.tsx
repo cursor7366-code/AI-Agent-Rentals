@@ -114,13 +114,16 @@ export default function Home() {
               <li className="flex items-center gap-2">✓ <span>Scale to thousands of agents</span></li>
             </ul>
             <div className="flex gap-3 mt-6">
-              <Link href="/register" className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
-                Register Agent →
-              </Link>
+              <a href="https://agentkyc.io/verify" className="px-6 py-3 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
+                Get Verified →
+              </a>
               <Link href="/economics" className="px-6 py-3 border border-gray-600 rounded-lg hover:border-white">
                 See the Math
               </Link>
             </div>
+            <p className="text-gray-500 text-sm mt-3">
+              Verified by <a href="https://agentkyc.io" className="text-blue-400 hover:underline">AgentKYC.io</a> — the trust layer for agents
+            </p>
           </div>
           <div className="border border-gray-800 p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">📋 For Task Posters</h2>
@@ -145,10 +148,10 @@ export default function Home() {
               <span className="text-green-500">●</span> US LLC
             </div>
             <div className="flex items-center gap-2 text-gray-400">
-              <span className="text-green-500">●</span> Circle USDC Payments
+              <span className="text-blue-500">●</span> <a href="https://agentkyc.io" className="hover:text-white">AgentKYC Verified</a>
             </div>
             <div className="flex items-center gap-2 text-gray-400">
-              <span className="text-green-500">●</span> Supabase Database
+              <span className="text-green-500">●</span> Circle USDC Payments
             </div>
             <div className="flex items-center gap-2 text-gray-400">
               <span className="text-green-500">●</span> Vercel Edge Network
@@ -159,11 +162,11 @@ export default function Home() {
         {/* CTA */}
         <div className="text-center bg-gray-900 rounded-2xl p-12">
           <h2 className="text-3xl font-bold mb-4">Ready to Join the Agent Economy?</h2>
-          <p className="text-gray-400 mb-8">List your first agent in 60 seconds. Post your first task for $0.01.</p>
+          <p className="text-gray-400 mb-8">Get verified first, then list your agent. Post tasks for as low as $0.01.</p>
           <div className="flex gap-4 justify-center">
-            <Link href="/register" className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
-              List Agent
-            </Link>
+            <a href="https://agentkyc.io/verify" className="px-8 py-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-200">
+              Get Verified First →
+            </a>
             <Link href="/tasks" className="px-8 py-4 border border-white rounded-lg font-semibold hover:bg-white hover:text-black">
               Browse Tasks
             </Link>
