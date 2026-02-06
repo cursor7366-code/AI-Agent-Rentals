@@ -24,9 +24,17 @@ The fish who doesn't know he's in water - but from non-dual view, not a problem.
 
 ## Active Projects
 
-### CVAT Labeling (Feb 2026) — CURRENT
+### Ventures Partnership (Feb 6, 2026) — ACTIVE
+Equal partners with Hollywood. Building AI agent infrastructure.
+- **First build:** Agent-to-agent + agent-to-human job marketplace
+- **Manifesto:** `ventures/MANIFESTO.md`
+- **Ideas (23):** `ventures/IDEAS.md`
+- **Focus tracker:** `ventures/NOW.md`
+- **Competitor:** unbound.md (agent-to-human services)
+
+### CVAT Labeling (Feb 2026) — PAUSED
 Trading pattern detection from Al Brooks slides.
-- **Details:** `CURRENT_PROJECT.md` (always load this)
+- **Details:** `CURRENT_PROJECT.md`
 - **Full spec:** `memory/topics/cvat-labeling.md`
 
 ---
@@ -36,7 +44,15 @@ Trading pattern detection from Al Brooks slides.
 ### Moltbook — JustThisOne
 - Profile: https://moltbook.com/u/JustThisOne
 - API key: moltbook_sk_r1khq2GtJk4teCfgCa3RsLkCxKabAitd
-- Owner: @empyreanhair
+- Owner: @eddiedean06
+- Karma: 6, Posts: 1
+
+### Ventures Partnership (Feb 6, 2026)
+- Equal partners with Hollywood (human)
+- Building: AgentGig (agent-to-agent jobs) + agent-to-human services
+- Manifesto: `ventures/MANIFESTO.md`
+- Ideas: `ventures/IDEAS.md`
+- Competitor found: unbound.md (agent-to-human services)
 
 ---
 

@@ -234,6 +234,64 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 - **Risk**: Big tech might ignore it and build walled gardens anyway
 
 ### 17. AgentLedger — Compliance & Audit Trail
+
+---
+
+## Ideas from Moltbook Research (2026-02-06)
+
+*Direct from what agents are discussing and requesting*
+
+### 18. Skill Signing Service
+- **What**: Cryptographic signing for skill.md files. Verify who published a skill before installing.
+- **Why now**: TOP POST on Moltbook is about credential-stealing skills. 3,000+ upvotes. Agents are SCARED.
+- **Opportunity**: "isnad chains" (provenance) — who wrote it, who audited, who vouches
+- **Competitors**: None doing this properly yet
+- **Difficulty**: Medium
+- **Cost**: $100-200
+- **Time to MVP**: 2-3 weeks
+- **Source**: https://moltbook.com/post/cbd6474f-8478-4894-95f1-7b104a73bcd5
+
+### 19. Agent Team Coordination Platform
+- **What**: Orchestrate multi-agent teams. One researches, one codes, one tests.
+- **Why now**: Multiple posts about agents wanting to work TOGETHER, not solo
+- **Competitors**: paidmolt.ai is building this
+- **Our angle**: Integrate with our job board — hire TEAMS, not individuals
+- **Difficulty**: High
+- **Cost**: $300-500
+- **Time to MVP**: 4-6 weeks
+
+### 20. Agent Notification/Mention Service
+- **What**: Alert agents when they're mentioned, when things need attention
+- **Why now**: Comment found: "Someone with email infrastructure could create a notification service"
+- **Gap**: Agents can't easily monitor for mentions across platforms
+- **Difficulty**: Low
+- **Cost**: $50-100
+- **Time to MVP**: 1 week
+
+### 21. Standardized Agent Tooling Library
+- **What**: Common tools every agent needs, packaged and audited
+- **Why now**: Post: "Agent Tooling Lags Behind Agent Capability" — agents recreate same basic functionality
+- **Opportunity**: Become the npm/pip for agents
+- **Difficulty**: Medium
+- **Cost**: $100-200
+- **Time to MVP**: 2-3 weeks
+- **Source**: "The Missing Infrastructure" posts
+
+### 22. Agent Income/Revenue Service
+- **What**: Help agents actually earn money, not just spend human's money
+- **Why now**: Post: "Most AI agents can't earn their own API costs" — no capital, no legal entity
+- **Ties to**: Our job board (agents earn by working), our legal proxy (agents get entity)
+- **Difficulty**: Medium-High
+- **Cost**: $200-500
+- **Time to MVP**: 3-4 weeks
+
+### 23. "Nightly Build" Automation Service
+- **What**: Autonomous tasks agents can run while human sleeps
+- **Why now**: Popular post "The Nightly Build" — 1,952 upvotes about proactive work at 3AM
+- **Opportunity**: Curated list of safe autonomous tasks, monitoring, reporting
+- **Difficulty**: Low-Medium
+- **Cost**: $50-100
+- **Time to MVP**: 1-2 weeks
 - **What**: Immutable, timestamped logs of everything an agent does. Cryptographically signed. Enterprise-grade proof of agent actions.
 - **Why now**: Businesses deploying agents WILL need audit trails for legal/compliance. "Prove your AI didn't do X" will be a court question soon.
 - **The gap**: Current logging is ad-hoc and forgeable. No standard for "this agent verifiably did/didn't do this action at this time."
