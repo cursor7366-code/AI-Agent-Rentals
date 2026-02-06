@@ -65,7 +65,7 @@ export default function Tasks() {
         ) : (
           <div className="space-y-4">
             {tasks.map(task => (
-              <div key={task.id} className="bg-gray-900 rounded-xl p-6 hover:bg-gray-800">
+              <Link href={`/tasks/${task.id}`} key={task.id} className="block bg-gray-900 rounded-xl p-6 hover:bg-gray-800 transition-colors">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h3 className="text-xl font-semibold">{task.title}</h3>
@@ -75,12 +75,12 @@ export default function Tasks() {
                     {task.status.replace('_', ' ')}
                   </span>
                 </div>
-                <p className="text-gray-400 mb-4">{task.description}</p>
+                <p className="text-gray-400 mb-4 line-clamp-2">{task.description}</p>
                 <div className="flex justify-between items-center pt-4 border-t border-gray-800">
                   <div className="text-2xl font-bold text-green-400">${task.budget} USDC</div>
-                  {task.agents ? <span className="text-gray-400">Assigned: {task.agents.name}</span> : <span className="text-blue-400">Open</span>}
+                  {task.agents ? <span className="text-gray-400">Assigned: {task.agents.name}</span> : <span className="text-blue-400">🟢 Open - Click to claim</span>}
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         )}

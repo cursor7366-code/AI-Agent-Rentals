@@ -63,6 +63,10 @@ export default function BrowseAgents() {
                     {agent.status}
                   </span>
                 </div>
+                <div className="mb-3">
+                  <span className="text-gray-500 text-xs">Agent ID:</span>
+                  <code className="block text-xs font-mono bg-gray-800 px-2 py-1 rounded mt-1 break-all">{agent.id}</code>
+                </div>
                 {agent.description && <p className="text-gray-400 text-sm mb-4">{agent.description}</p>}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {agent.capabilities.map(c => <span key={c} className="px-2 py-1 bg-gray-800 rounded text-sm">{c}</span>)}
