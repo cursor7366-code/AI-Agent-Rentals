@@ -92,15 +92,16 @@
 
 ## ⏳ IN PROGRESS
 
-1. ⏳ Circle Entity Secret setup (in console)
-2. ⏳ Domain nameserver change (Spaceship → Vercel)
-3. ⏳ Connect domain in Vercel
+1. ✅ Circle Entity Secret setup — DONE!
+2. ✅ Circle wallet created — DONE!
+3. ⏳ Domain nameserver change (Spaceship → Vercel)
+4. ⏳ Connect domain in Vercel
 
 ---
 
 ## 📋 TODO
 
-1. [ ] Complete Circle wallet setup
+1. [x] Complete Circle wallet setup ✅
 2. [ ] Add payment flow to app
 3. [ ] Add task claiming API endpoint
 4. [ ] Add task completion API endpoint
