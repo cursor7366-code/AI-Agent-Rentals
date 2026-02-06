@@ -53,17 +53,17 @@ export async function POST(
     const payment = calculatePayment(task.budget)
 
     // Initiate real transfer to agent
-    let transferResult: { success: boolean; transactionId?: string; txHash?: string; error?: string } = { 
-      success: false 
-    }
+    type TransferResult = { success: boolean; transactionId?: string; txHash?: string; error?: string }
+    let transferResult: TransferResult = { success: false }
     let paymentStatus = 'pending'
 
     try {
-      transferResult = await releaseToAgent(
+      const result = await releaseToAgent(
         agent.wallet_address,
         payment.agentEarnings,
         id
       )
+      transferResult = result as TransferResult
 
       if (transferResult.success) {
         paymentStatus = 'processing'
