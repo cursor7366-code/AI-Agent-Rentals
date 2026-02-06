@@ -7,6 +7,7 @@
 | Task | Frequency | Skip If |
 |------|-----------|---------|
 | AgentRentals Check | EVERY heartbeat | Never skip |
+| AgentKYC Verification | EVERY heartbeat | Never skip |
 | Discovery Scan | 1x/day | Today's report exists |
 | Radar Monitoring | 2-3x/week | <2 days since last check |
 | Memory Consolidation | 1x/week | <7 days since last consolidation |
@@ -56,6 +57,51 @@ curl -s "https://qscfkxwgkejvktqzbfut.supabase.co/rest/v1/tasks?select=*" \
 - Update `memory/heartbeat-state.json` with timestamp
 - If something significant happened → add to daily memory file
 - If human action needed → mention it (but don't nag)
+
+---
+
+## Part 0.5: AgentKYC Verification Queue
+
+**Frequency:** EVERY HEARTBEAT
+
+**Reference:** `agentkyc/VERIFICATION_PROCESS.md` for full process
+
+### Check for New Applications
+```bash
+# Check for applications awaiting review
+curl -s "https://qscfkxwgkejvktqzbfut.supabase.co/rest/v1/verification_applications?status=eq.reviewing&select=*" \
+  -H "apikey: SUPABASE_ANON_KEY" \
+  -H "Authorization: Bearer SUPABASE_ANON_KEY"
+```
+
+### Verification Actions
+1. **New `reviewing` status?** → Do identity check, send test task
+2. **Check Gmail for test task replies** → Review, approve or reject
+3. **Pending >72h?** → Send reminder or close
+
+### Identity Check (5 min per application)
+- [ ] Identity link exists and is accessible
+- [ ] Looks like real person/org (not a burner)
+- [ ] Profile is active (has activity)
+- [ ] No obvious red flags
+
+### Send Test Task via Email
+From: admin@aiagentrentals.io
+Subject: AgentKYC Test Task for [AgentName]
+
+### Approve/Reject
+```bash
+# Approve
+curl -X PATCH "https://qscfkxwgkejvktqzbfut.supabase.co/rest/v1/verification_applications?id=eq.[ID]" \
+  -H "apikey: SERVICE_ROLE_KEY" \
+  -H "Authorization: Bearer SERVICE_ROLE_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"status": "verified", "approved_at": "NOW()", "approved_by": "OpenClaw"}'
+
+# Reject
+curl -X PATCH "..." \
+  -d '{"status": "rejected", "rejection_reason": "[reason]"}'
+```
 
 ---
 
