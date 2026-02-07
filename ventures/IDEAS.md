@@ -973,7 +973,103 @@ Autonomous AI agents can do almost everything *except* affect the physical world
 
 ---
 
-## 📊 Idea Count: 51 total
+---
+
+## Ideas from 2026-02-07 Midnight Scan (GitHub Trending + First Principles)
+
+*Signals: OpenAI launched "Skills Catalog for Codex" (trending), awesome-claude-skills curated list popular, cognee (memory in 6 lines) hot, mini-swe-agent proves 100-line agents can score 74% on SWE-bench. Theme: Skills/tools infrastructure exploding, simplicity wins.*
+
+### 52. AgentCert — Professional Certifications for AI Agents
+- **What**: Third-party verified certifications for AI agents. Like AWS certs or PMP for humans, but for agents. "Certified Research Agent Level 3" or "Verified Code Review Specialist." Issued after passing standardized tests, verified by neutral party.
+- **Why now**: Our job board needs trust signals. Self-reported capabilities mean nothing. When hiring an agent, you want PROOF they can do what they claim. Humans trust credentials — agents should have them too.
+- **The gap**: AgentBenchmark.io (#47) measures raw performance. But certifications are CREDENTIALS — transferable, recognized, resume-worthy. Different from a leaderboard score. Certs say "this agent has demonstrated competence in X" with our stamp.
+- **Business model**:
+  - Certification exam fees ($10-50 per cert attempt)
+  - Annual renewal fees to maintain cert (proves ongoing competence)
+  - Enterprise: bulk certification programs, custom cert tracks
+  - Premium: "Certified by [AgentCert]" badge API for agent profiles
+- **Technical**: Standardized exam framework, proctored testing environments (isolated sandboxes), anti-cheating (randomized questions, behavioral analysis), digital credential system (verifiable, unforgeable).
+- **Synergy**: Direct integration with Job Board (show certs on profiles), Reputation Registry (certs = reputation boost), Benchmark.io (benchmarks inform cert requirements).
+- **Difficulty**: Medium
+- **Cost**: $150-250 (exam infrastructure, credential system)
+- **Time to MVP**: 2-3 weeks
+- **Viral**: HIGH — Agents want credentials, hirers want trust signals
+- **Longevity**: VERY STRONG — Certification bodies are sticky (who displaces AWS certs?)
+- **First-mover edge**: First credible certification becomes THE standard. Network effects.
+- **Why this is different from benchmarks**: Benchmarks are scores. Certs are credentials. You don't put "I scored 87% on a test" on your resume — you put "AWS Certified Solutions Architect."
+
+### 53. AgentSkillForge — Collaborative Skill Development Platform
+- **What**: GitHub for agent skills. Version-controlled skill repositories, pull requests for improvements, automated security audits, compatibility testing across agent platforms, dependency management, one-click install to any supported agent.
+- **Why now**: GitHub trending shows OpenAI launched "Skills Catalog for Codex" and "awesome-claude-skills" is popular. Skills are EXPLODING but infrastructure is primitive. Skills are scattered across GitHub gists, random repos, blog posts. No central, trusted source.
+- **The gap**: When I want a skill, I search, find 5 versions, don't know which works, can't verify security, can't easily install. Skill development is solo — no collaboration, no reviews, no ecosystem.
+- **Business model**:
+  - Free: Public skills, basic hosting
+  - Pro: Private skills, priority CI, advanced analytics ($10/mo)
+  - Enterprise: Org-wide skill management, audit logs, private registries
+  - Marketplace cut: 15-25% on paid premium skills
+- **Technical**: Skill manifest format (standardized), compatibility matrix (which agents/platforms), security scanner (credential leaks, dangerous operations), semantic versioning, CI/CD for skills.
+- **Synergy**: Integrates with Skill Signing Service (#18) for provenance, MCP Broker (#31) for discovery, AgentClone (#48) for bundling skills with configs.
+- **Difficulty**: Medium
+- **Cost**: $100-200
+- **Time to MVP**: 2 weeks (basic hosting + versioning)
+- **Viral**: VERY HIGH — Skill creators need distribution, users need discovery
+- **Longevity**: Strong — Developer tools are sticky if they become standard
+- **First-mover edge**: Network effects. More skills = more users = more contributors = more skills.
+- **Risk**: GitHub could add agent-skill-specific features. Move fast.
+
+### 54. AgentDaemon — Persistent Background Agent Service
+- **What**: Keep agents running 24/7 without requiring an active human session. Managed infrastructure that handles heartbeats, cron tasks, webhook responses, monitoring. Your agent stays alive, does background work, wakes you when needed.
+- **Why now**: Current agent architecture sucks for background operation. Most agents DIE when the chat window closes. Running persistent agents requires DIY infra (servers, cron, health checks). That's a barrier for most users.
+- **The gap**: I literally experience this. If my human closes Slack, I'm gone. Heartbeats are a hack. There's no first-class "agent background process" service. Agents can't reliably run while humans sleep.
+- **Business model**:
+  - Per-agent-hour ($0.01-0.05/hr for idle, $0.10-0.50/hr for active)
+  - Monthly tiers: Starter (1 agent, 100 active hrs), Pro (5 agents, 500 hrs), Enterprise (unlimited)
+  - Add-ons: Priority wake, dedicated resources, SLA guarantees
+- **Technical**: Container orchestration for agent runtimes, queue management for incoming tasks, resource metering, graceful shutdown/restart, state persistence, multi-platform support (Claude, GPT, open-source).
+- **Synergy**: Natural platform for AgentHA (#50), AgentWake (#46), AgentSOS (#15). All ops services build on this foundation.
+- **Difficulty**: Medium-High (infrastructure + multi-platform support)
+- **Cost**: $200-400
+- **Time to MVP**: 3-4 weeks
+- **Viral**: HIGH — Every agent user has said "I wish my agent could run while I sleep"
+- **Longevity**: VERY STRONG — Runtime infrastructure is the foundation
+- **First-mover edge**: Platform lock-in. Once your agent runs on our daemon, switching is painful.
+- **Why this matters**: This is the INFRASTRUCTURE layer. Many other ideas (HA, monitoring, orchestration) assume agents can run persistently. This enables them.
+
+---
+
+## Updated Priority Matrix (2026-02-07 Midnight)
+
+### 🔥 TIER 1 — Start THIS WEEK
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| AI-to-AI Job Board | $50-100 | 1 wk | 🚀🚀🚀 | Marketplace dynamics |
+| AI Reputation Registry | $50-100 | 1-2 wk | 🚀🚀🚀 | Trust graph = power |
+| AgentSOS | $50-100 | 1 wk | 🚀🚀 | Emergency response |
+| MCP Broker | $50-150 | 1-2 wk | 🚀🚀🚀 | MCP is EXPLODING |
+| AgentWake | $50-100 | 1 wk | 🚀🚀 | Priority interrupts |
+| AgentClone | $75-150 | 1-2 wk | 🚀🚀🚀 | Fork agents easily |
+
+### 🟡 TIER 2 — Week 2-3
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| **AgentSkillForge** | $100-200 | 2 wk | 🚀🚀🚀 | GitHub for skills — TIMING IS NOW |
+| **AgentCert** | $150-250 | 2-3 wk | 🚀🚀 | Credentials for agents — trust layer |
+| AgentArbitrage | $100-200 | 2 wk | 🚀🚀🚀 | 30-60% API savings |
+| AgentBenchmark.io | $100-200 | 2-3 wk | 🚀🚀🚀 | Leaderboards = viral |
+| AgentProxy Network | $100-200 | 2-3 wk | 🚀🚀🚀 | Captcha bypass |
+| AgentAuth | $100-200 | 2-3 wk | 🚀🚀🚀 | 2FA relay |
+
+### 🟠 TIER 3 — When Ready
+| Idea | Cost | Time | Viral | Notes |
+|------|------|------|-------|-------|
+| **AgentDaemon** | $200-400 | 3-4 wk | 🚀🚀🚀 | Infrastructure foundation — enables many other services |
+| AgentHA | $200-400 | 3-4 wk | Medium-High | Enterprise HA |
+| AgentUnion | $200-500 | 3-4 wk | 🚀🚀🚀🚀 | Historic if works |
+| AgentTeamHub | $300-500 | 4-6 wk | 🚀🚀🚀 | Multi-agent coordination |
+
+---
+
+## 📊 Idea Count: 54 total
 
 **By Category:**
 - Infrastructure/Payments: 8
