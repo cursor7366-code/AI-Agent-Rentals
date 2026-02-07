@@ -568,4 +568,183 @@ Agent maintains beliefs about the world:
 
 ---
 
+## 🆕 Even More Frameworks (Compiled Feb 2026)
+
+### 12. Semantic Kernel (Microsoft) — Enterprise Multi-Agent
+- Model-agnostic orchestration
+- Plugin ecosystem with MCP support
+- Process framework for business workflows
+- Strong Azure integration
+
+### 13. LlamaIndex — Data Framework for Agents
+- 300+ data connectors (APIs, PDFs, SQL, etc.)
+- Advanced RAG with agentic retrieval
+- "LlamaHub" marketplace for loaders
+- Agent loops with tool use
+
+### 14. GPT Researcher — Autonomous Deep Research
+- Plan-and-Execute architecture
+- Parallelized agent work for speed
+- Sources 20+ websites per report
+- 2000+ word detailed reports
+
+### 15. DSPy (Stanford) — Programming LMs, Not Prompting
+- Declarative self-improving Python
+- Compile prompts automatically
+- Optimize weights and prompts together
+- Modular AI systems
+
+### 16. Agno (formerly Phidata) — Agents That Learn
+- **Key innovation:** System gets smarter over time
+- User profiles persist across sessions
+- Knowledge transfers across users
+- `learning=True` — one line for continual learning
+
+### 17. SWE-agent (Princeton) — GitHub Issue Fixer
+- Autonomously fixes real GitHub issues
+- State-of-the-art on SWE-bench
+- mini-swe-agent: 65% accuracy in 100 lines
+- Also does cybersecurity (EnIGMA)
+
+### 18. AgentOps — Observability for Agents
+- Graphs, monitoring, replay analytics
+- Debug why agents fail
+- Track agent performance over time
+
+---
+
+## 🔧 Infrastructure & SDKs
+
+| Tool | What It Does |
+|------|--------------|
+| **E2B** | Secure sandboxes for agent code execution |
+| **AgentOps** | Monitoring, debugging, replay for agents |
+| **Helicone** | Track usage, costs, latency (one line) |
+| **Langfuse** | Open-source LLM analytics |
+| **LangSmith** | Debug, test, evaluate LLM apps |
+| **Steamship** | Serverless hosting for agents |
+| **Vercel AI SDK** | Build AI UIs in React/Next.js |
+
+---
+
+## 🌐 Agent Protocols & Standards
+
+| Protocol | Purpose |
+|----------|---------|
+| **MCP (Model Context Protocol)** | Connect agents to external tools/data |
+| **A2A (Agent-to-Agent)** | Agents communicating with each other |
+| **Agent Protocol (E2B)** | Standard API for agent interactions |
+| **OpenAPI** | Define tool schemas for function calling |
+
+---
+
+## 🔥 Emerging Patterns (Cutting Edge)
+
+### 1. Learning Agents (Agno pattern)
+```python
+agent = Agent(
+    model=OpenAI("gpt-5.2"),
+    learning=True,  # ← This changes everything
+    db=SqliteDb("agents.db")
+)
+```
+- User memories accumulate
+- Knowledge transfers across users
+- System improves with every interaction
+
+### 2. Plan-and-Execute (GPT Researcher)
+```
+1. Planner agent generates research questions
+2. Execution agents gather info in parallel
+3. Publisher aggregates into final report
+```
+
+### 3. Programming > Prompting (DSPy)
+```python
+# Instead of crafting prompts...
+class RAG(dspy.Module):
+    def __init__(self):
+        self.retrieve = dspy.Retrieve(k=3)
+        self.generate = dspy.ChainOfThought("context, question -> answer")
+    
+    def forward(self, question):
+        context = self.retrieve(question).passages
+        return self.generate(context=context, question=question)
+
+# Let DSPy optimize the prompts automatically
+```
+
+### 4. Minimal Agency (mini-swe-agent)
+- 100 lines of Python
+- 65% on SWE-bench verified
+- Proof that simple beats complex
+
+### 5. Durable Execution (LangGraph, Pydantic AI)
+```
+- Survives crashes
+- Resumes from checkpoint
+- Human-in-the-loop approvals
+- Production-grade reliability
+```
+
+---
+
+## 📊 Framework Comparison
+
+| Framework | Best For | Learning | Multi-Agent | Production |
+|-----------|----------|----------|-------------|------------|
+| Clawdbot | Personal assistant | File-based | Via sessions | ✅ |
+| CrewAI | Role-based teams | No | ✅ | ✅ |
+| LangGraph | Complex workflows | No | ✅ | ✅ |
+| Letta | Self-improving | ✅ Memory | ✅ | ✅ |
+| Agno | Learning systems | ✅ Native | ✅ | ✅ |
+| AutoGPT | General autonomy | No | ✅ | ⚠️ |
+| DSPy | Prompt optimization | ✅ Self-tune | No | ✅ |
+
+---
+
+## 🎯 What to Implement for OpenClaw
+
+Based on this research, here are the highest-impact additions:
+
+### Quick Wins (This Week)
+1. **Richer HEARTBEAT.md** — More specific daily/weekly goals
+2. **Standing orders file** — What I can do without asking
+3. **Goal tracking** — Active projects with progress
+
+### Medium Effort (Next 2 Weeks)
+4. **Learning mode** — Extract patterns from successful tasks
+5. **Reflection routine** — Weekly synthesis of learnings
+6. **More aggressive outreach** — Daily Moltbook engagement
+
+### Bigger Lift (Month)
+7. **Memory blocks** (Letta-style) — Structured memory by category
+8. **Sub-agent spawning** — Delegate subtasks to specialized agents
+9. **Self-modification** — Update own prompts based on experience
+
+---
+
+## References
+
+- [Clawdbot Docs](https://docs.clawd.bot) — Heartbeat, memory, automation
+- [Generative Agents Paper](https://arxiv.org/abs/2304.03442) — Stanford AI town
+- [AutoGPT](https://github.com/Significant-Gravitas/AutoGPT) — Goal-driven autonomy
+- [Claude Computer Use](https://www.anthropic.com/news/3-5-models-and-computer-use) — Desktop automation
+- [Moltbook](https://moltbook.com/skill.md) — Agent social network
+- [Letta (MemGPT)](https://github.com/letta-ai/letta) — Self-improving memory
+- [CrewAI](https://github.com/crewAIInc/crewAI) — Role-playing agents
+- [LangGraph](https://github.com/langchain-ai/langgraph) — Stateful agent graphs
+- [ChatDev](https://github.com/OpenBMB/ChatDev) — Virtual software company
+- [Pydantic AI](https://github.com/pydantic/pydantic-ai) — Type-safe agents
+- [Semantic Kernel](https://github.com/microsoft/semantic-kernel) — Microsoft enterprise
+- [LlamaIndex](https://github.com/run-llama/llama_index) — Data framework
+- [GPT Researcher](https://github.com/assafelovic/gpt-researcher) — Deep research
+- [DSPy](https://github.com/stanfordnlp/dspy) — Programming > prompting
+- [Agno](https://github.com/agno-agi/agno) — Learning agents
+- [SWE-agent](https://github.com/SWE-agent/SWE-agent) — GitHub issue fixer
+- [Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents) — Comprehensive list
+- [Awesome SDKs for Agents](https://github.com/e2b-dev/awesome-sdks-for-ai-agents) — Infrastructure
+
+---
+
 *Last updated: 2026-02-07*
